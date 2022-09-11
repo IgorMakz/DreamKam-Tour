@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
     <link rel="stylesheet" href="normalize.css">
     <link rel="stylesheet" href="styles.css">
     <title>DREAMKAM TOUR</title>
@@ -12,7 +14,23 @@
 
 <body>
     <div class="wrapper">
-        <div class="main-swiper">
+        <div class="main-block">
+            <!-- Slider main container -->
+            <div class="swiper main-swiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper main-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide main-slide">
+                        <img src="./img/main_img1.jpg" alt="" srcset="">
+                    </div>
+                    <div class="swiper-slide main-slide">
+                        <img src="./img/main_img2.jpg" alt="" srcset="">
+                    </div>
+                    <div class="swiper-slide main-slide">
+                        <img src="./img/main_img3.jpg" alt="" srcset="">
+                    </div>
+                </div>
+            </div>
             <header class="header">
                 <div class="container">
                     <div class="header-content flex">
@@ -22,7 +40,7 @@
                         <nav class="header-nav">
                             <ul class="nav-list list-reset flex">
                                 <li class="nav-item">
-                                    <a href="#" class="nav-link">
+                                    <a href="#timetable" class="nav-link">
                                         Расписание тура
                                     </a>
                                 </li>
@@ -44,7 +62,6 @@
                             </ul>
                         </nav>
                     </div>
-
                 </div>
             </header>
             <section class="hero">
@@ -63,7 +80,7 @@
                                     на&nbsp;всю
                                     жизнь.
                                 </p>
-                                <a href="#" class="hero-btn btn-reset">
+                                <a href="#timetable" class="hero-btn btn-reset flex">
                                     <span class="btn-text">
                                         Расписание тура
                                     </span>
@@ -91,7 +108,23 @@
                                 </ul>
                             </div>
                             <div class="hero-right">
-                                <div class="hero-swiper">
+                                <div class="swiper hero-swiper">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide hero-slide">
+                                            <img src="./img/slide_1_opt.jpg" alt="">
+                                        </div>
+                                        <div class="swiper-slide hero-slide">
+                                            <img src="./img/slide_2_opt.jpg" alt="">
+                                        </div>
+                                        <div class="swiper-slide hero-slide">
+                                            <img src="./img/slide_3_opt.jpg" alt="">
+                                        </div>
+                                        <div class="swiper-slide hero-slide">
+                                            <img src="./img/slide_4_opt.jpg" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="swiper-button-prev hero-swiper-prev"></div>
+                                    <div class="swiper-button-next hero-swiper-next"></div>
                                 </div>
                             </div>
                         </div>
@@ -170,7 +203,8 @@
                                     от&nbsp;увиденного. Это за&nbsp;гранью реальности. Невероятно!&raquo;
                                 </blockquote>
                                 <span class="quote-author">
-                                    Максим, <a href="" target="_blank" class="quote-link">@max_max</a>
+                                    Максим, <a href="https://www.instagram.com/" target="_blank"
+                                        class="quote-link">@max_max</a>
                                 </span>
                             </div>
                         </div>
@@ -182,7 +216,7 @@
                     <div class="container">
                         <div class="block1-content flex">
                             <div class="block1-left">
-                                <h3 class="schedule-title">
+                                <h3 class="schedule-title" id="timetable">
                                     <span class="schedule-info">
                                         День&nbsp;1.
                                     </span>
@@ -214,8 +248,77 @@
                                     </p>
                                 </div>
                             </div>
-                            <div class="block1-right">
-                                <div class="block1-swiper"></div>
+                            <div class="swiper block1-swiper">
+                                <div class="swiper-wrapper block1-wrapper">
+                                    <div class="swiper-slide block1-slide">
+                                        <a href="#" class="block1-popup">
+                                            <img src="./img/block1_img1_opt.jpg" alt="" srcset="">
+                                            <div class="slide-descr">
+                                                <h4 class="slide-subtitle">
+                                                    Паратунка
+                                                </h4>
+                                                <p class="slide-text">
+                                                    В&nbsp;долине реки Паратунки расположенны горячие источники
+                                                </p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide block1-slide">
+                                        <a href="#" class="block1-popup">
+                                            <img src="./img/block1_img2_opt.jpg" alt="" srcset="">
+                                            <div class="slide-descr">
+                                                <h4 class="slide-subtitle">
+                                                    Памятник «Здесь начинается Россия»
+                                                </h4>
+                                                <p class="slide-text">
+                                                    Памятник посвящен медведице с медвежонком-символам Камчатки
+                                                </p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide block1-slide">
+                                        <a href="#" class="block1-popup">
+                                            <img src="./img/block1_img3_opt.jpg" alt="" srcset="">
+                                            <div class="slide-descr">
+                                                <h4 class="slide-subtitle">
+                                                    Вулкан Корякская сопка
+                                                </h4>
+                                                <p class="slide-text">
+                                                    Действующий вулкан. Относится к стратовулканам.
+                                                </p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide block1-slide">
+                                        <a href="#" class="block1-popup">
+                                            <img src="./img/block1_img4_opt.jpg" alt="" srcset="">
+                                            <div class="slide-descr">
+                                                <h4 class="slide-subtitle">
+                                                    Авачинская Сопка
+                                                </h4>
+                                                <p class="slide-text">
+                                                    Действующий вулкан. Относится к вулканам типа Сомма-Везувий.
+                                                </p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide block1-slide">
+                                        <a href="#" class="block1-popup">
+                                            <img src="./img/block1_img5_opt.jpg" alt="" srcset="">
+                                            <div class="slide-descr">
+                                                <h4 class="slide-subtitle">
+                                                    Козельский вулкан
+                                                </h4>
+                                                <p class="slide-text">
+                                                    Потухший вулкан. На вулкане находится месторождение редкого минерала
+                                                    карбонадо (чёрный алмаз).
+                                                </p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="swiper-button-prev block1-swiper-prev"></div>
+                                <div class="swiper-button-next block1-swiper-next"></div>
                             </div>
                         </div>
                     </div>
@@ -240,25 +343,75 @@
                             </p>
                         </div>
                     </div>
-                    <div class="block2-bottom flex">
-                        <div class="block2-swiper"></div>
-                        <div class="schedule-descr">
-                            <p class="paragraph">
-                                Выезд из&nbsp;отеля в&nbsp;10.00. Переезд в&nbsp;верховья реки Паратунка
-                                к&nbsp;подножию
-                                вулкана Вилючинский. Обзорная пешеходная экскурсия к&nbsp;водопаду Вилючинский.
-                                Термос
-                                с&nbsp;чаем, шоколад. Возвращение назад.
-                            </p>
-                            <p class="paragraph">
-                                Обед. Купание в&nbsp;Верхне-Паратунских термальных источниках, расположенных
-                                на&nbsp;склоне сопки Горячая.
-                            </p>
-                            <p class="paragraph">
-                                Продолжительность&nbsp;&mdash; 6-8&nbsp;часов. Трансфер в&nbsp;гостиницу.
-                            </p>
+                    <div class="container">
+                        <div class="block2-bottom flex">
+                            <div class="swiper block2-swiper">
+                                <div class="swiper-wrapper">
+                                    <!-- Slides -->
+                                    <div class="swiper-slide block2-slide">
+                                        <a href="#" class="block1-popup">
+                                            <img src="./img/block2_img1_opt.jpg" alt="" srcset="">
+                                            <div class="slide-descr">
+                                                <h4 class="slide-subtitle">
+                                                    Вилючинский водопад
+                                                </h4>
+                                                <p class="slide-text">
+                                                    Находится у подножия Вилючинского вулкана и падает с высоты 40
+                                                    метров
+                                                </p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide block2-slide">
+                                        <a href="#" class="block1-popup">
+                                            <img src="./img/block2_img2_opt.jpg" alt="" srcset="">
+                                            <div class="slide-descr">
+                                                <h4 class="slide-subtitle">
+                                                    Верхне-паратунские термальные источники
+                                                </h4>
+                                                <p class="slide-text">
+                                                    Расположены в долине реки Паратунка
+                                                </p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide block2-slide">
+                                        <a href="#" class="block1-popup">
+                                            <img src="./img/block2_img3_opt.jpg" alt="" srcset="">
+                                            <div class="slide-descr">
+                                                <h4 class="slide-subtitle">
+                                                    Вилючинский вулкан
+                                                </h4>
+                                                <p class="slide-text">
+                                                    Сопка с водопадом, альпийскими лугами и горнолыжной трассой
+                                                </p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <div class="swiper-button-prev block2-swiper-prev"></div>
+                                <div class="swiper-button-next block2-swiper-next"></div>
+                            </div>
+                            <div class="schedule-descr">
+                                <p class="paragraph">
+                                    Выезд из&nbsp;отеля в&nbsp;10.00. Переезд в&nbsp;верховья реки Паратунка
+                                    к&nbsp;подножию
+                                    вулкана Вилючинский. Обзорная пешеходная экскурсия к&nbsp;водопаду Вилючинский.
+                                    Термос
+                                    с&nbsp;чаем, шоколад. Возвращение назад.
+                                </p>
+                                <p class="paragraph">
+                                    Обед. Купание в&nbsp;Верхне-Паратунских термальных источниках, расположенных
+                                    на&nbsp;склоне сопки Горячая.
+                                </p>
+                                <p class="paragraph">
+                                    Продолжительность&nbsp;&mdash; 6-8&nbsp;часов. Трансфер в&nbsp;гостиницу.
+                                </p>
+                            </div>
                         </div>
                     </div>
+
                 </div>
                 <article class="expectations">
                     <div class="expectations-container">
@@ -313,7 +466,53 @@
                 <div class="block3-container">
                     <div class="container">
                         <div class="block3-content flex">
-                            <div class="block3-swiper"></div>
+                            <div class="swiper block3-swiper">
+                                <div class="swiper-wrapper">
+                                    <!-- Slides -->
+                                    <div class="swiper-slide block3-slide">
+                                        <a href="#" class="block1-popup">
+                                            <img src="./img/block3_img1_opt.jpg" alt="" srcset="">
+                                            <div class="slide-descr">
+                                                <h4 class="slide-subtitle">
+                                                    Вулкан Вачкажец
+                                                </h4>
+                                                <p class="slide-text">
+                                                    Свое название вулкан получил от ительменов
+                                                </p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide block3-slide">
+                                        <a href="#" class="block1-popup">
+                                            <img src="./img/block3_img2_opt.jpg" alt="" srcset="">
+                                            <div class="slide-descr">
+                                                <h4 class="slide-subtitle">
+                                                    Горный массив Вачкажец
+                                                </h4>
+                                                <p class="slide-text">
+                                                    Тайное место, где царит гармония растительного и животного мира
+                                                </p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide block3-slide">
+                                        <a href="#" class="block1-popup">
+                                            <img src="./img/block3_img3_opt.jpg" alt="" srcset="">
+                                            <div class="slide-descr">
+                                                <h4 class="slide-subtitle">
+                                                    Озеро Тахколоч
+                                                </h4>
+                                                <p class="slide-text">
+                                                    Расположенно у самого подножия вулкана Вачкажец
+                                                </p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <div class="swiper-button-prev block3-swiper-prev"></div>
+                                <div class="swiper-button-next block3-swiper-next"></div>
+                            </div>
                             <div class="block3-right">
                                 <h3 class="schedule-title">
                                     <span class="schedule-info">
@@ -389,7 +588,68 @@
                 <div class="block">
                     <div class="container">
                         <div class="block5-content flex">
-                            <div class="block5-swiper"></div>
+                            <div class="swiper block5-swiper">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide block5-slide">
+                                        <a href="#" class="block1-popup">
+                                            <img src="./img/block5_img1_opt.jpg" alt="" srcset="">
+                                            <div class="slide-descr">
+                                                <h4 class="slide-subtitle">
+                                                    Остров Старичков
+                                                </h4>
+                                                <p class="slide-text">
+                                                    Свое название он получил благодаря населяющим его птицам старикам
+                                                    еще в XVIII веке.
+                                                </p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide block5-slide">
+                                        <a href="#" class="block1-popup">
+                                            <img src="./img/block5_img2_opt.jpg" alt="" srcset="">
+                                            <div class="slide-descr">
+                                                <h4 class="slide-subtitle">
+                                                    Три Брата
+                                                </h4>
+                                                <p class="slide-text">
+                                                    Группа из трех выступающих из воды столбообразных скал,
+                                                    расположенных на входе в Авачинскую бухту
+                                                </p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide block5-slide">
+                                        <a href="#" class="block1-popup">
+                                            <img src="./img/block5_img3_opt.jpg" alt="" srcset="">
+                                            <div class="slide-descr">
+                                                <h4 class="slide-subtitle">
+                                                    Остров Бабушкин Камень
+                                                </h4>
+                                                <p class="slide-text">
+                                                    Остров является кекуром, расположенный у входа в Авачинскую бухту.
+                                                </p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide block5-slide">
+                                        <a href="#" class="block1-popup">
+                                            <img src="./img/block5_img4_opt.jpg" alt="" srcset="">
+                                            <div class="slide-descr">
+                                                <h4 class="slide-subtitle">
+                                                    Мыс Станицкого
+                                                </h4>
+                                                <p class="slide-text">
+                                                    Мыс представляет собой две скалы, отделенные одна от другой и от
+                                                    берега неширокими расщелинами.
+                                                </p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <div class="swiper-button-prev block5-swiper-prev"></div>
+                                <div class="swiper-button-next block5-swiper-next"></div>
+                            </div>
                             <div class="block5-right">
                                 <h3 class="schedule-title">
                                     <span class="schedule-info">
@@ -467,7 +727,52 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="block6-swiper"></div>
+                            <div class="swiper block6-swiper">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide block6-slide">
+                                        <a href="#" class="block1-popup">
+                                            <img src="./img/block6_img1_opt.jpg" alt="" srcset="">
+                                            <div class="slide-descr">
+                                                <h4 class="slide-subtitle">
+                                                    Волновой SUP серфинг
+                                                </h4>
+                                                <p class="slide-text">
+                                                    Захватывающая прогулка на сапбордах
+                                                </p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide block6-slide">
+                                        <a href="#" class="block1-popup">
+                                            <img src="./img/block6_img2_opt.jpg" alt="" srcset="">
+                                            <div class="slide-descr">
+                                                <h4 class="slide-subtitle">
+                                                    Халактырский пляж
+                                                </h4>
+                                                <p class="slide-text">
+                                                    Пляж на берегу Тихого океана
+                                                </p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide block6-slide">
+                                        <a href="#" class="block1-popup">
+                                            <img src="./img/block6_img3_opt.jpg" alt="" srcset="">
+                                            <div class="slide-descr">
+                                                <h4 class="slide-subtitle">
+                                                    Первозданная Камчатка: Тихий океан
+                                                </h4>
+                                                <p class="slide-text">
+
+                                                </p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <div class="swiper-button-prev block6-swiper-prev"></div>
+                                <div class="swiper-button-next block6-swiper-next"></div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -509,7 +814,53 @@
                         </div>
                     </div>
                     <div class="block7-bottom flex">
-                        <div class="block7-swiper"></div>
+                        <div class="swiper block7-swiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide block7-slide">
+                                    <a href="#" class="block1-popup">
+                                        <img src="./img/block7_img1_opt.jpg" alt="" srcset="">
+                                        <div class="slide-descr">
+                                            <h4 class="slide-subtitle">
+                                                Долина гейзеров
+                                            </h4>
+                                            <p class="slide-text">
+                                                Уникальная долина находится в объятиях Кроноцкого
+                                                государственного заповедника.
+                                            </p>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide block7-slide">
+                                    <a href="#" class="block1-popup">
+                                        <img src="./img/block7_img2_opt.jpg" alt="" srcset="">
+                                        <div class="slide-descr">
+                                            <h4 class="slide-subtitle">
+                                                Кальдера вулкана Узон
+                                            </h4>
+                                            <p class="slide-text">
+                                                Кальдера представляет собой чашеобразную котловину размером 9 х 12 км.
+                                            </p>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide block7-slide">
+                                    <a href="#" class="block1-popup">
+                                        <img src="./img/block7_img3_opt.jpg" alt="" srcset="">
+                                        <div class="slide-descr">
+                                            <h4 class="slide-subtitle">
+                                                Налычевская долина
+                                            </h4>
+                                            <p class="slide-text">
+                                                Долина, окруженной со всех сторон горными хребтами и величественными вулканами.
+                                            </p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="swiper-button-prev block7-swiper-prev"></div>
+                            <div class="swiper-button-next block7-swiper-next"></div>
+                        </div>
                         <div class="block7-right">
                             <p class="paragraph">
                                 Перелёт и&nbsp;посадка в&nbsp;Налычевской долине. Купание в&nbsp;горячих
@@ -617,8 +968,10 @@
                                         </a>
                                     </li>
                                 </ul>
-                                <button type="button" class="price-btn btn-reset">
-                                    Отправить заявку
+                                <button type="button" class="price-btn btn-reset flex">
+                                    <span class="btn-text">
+                                        Отправить заявку
+                                    </span>  
                                     <svg width="38" height="39" viewbox="0 0 38 39" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
                                         <rect x="-0.5" y="0.5" width="37" height="37" rx="18.5"
@@ -772,15 +1125,16 @@
                                     </ul>
                                 </div>
                                 <div class="request-right">
-                                    <form action="" class="request-form">
+                                    <form action="https://jsonplaceholder.typicode.com/posts" method="post"
+                                        class="request-form">
                                         <div class="form-top">
                                             <div class="name">
                                                 <label for="name">Имя уастника</label>
-                                                <input type="text" id="name" placeholder="Имя">
+                                                <input type="text" id="name" placeholder="Имя" name="name">
                                             </div>
                                             <div class="amount">
                                                 <label for="amount">Количество человек</label>
-                                                <input type="number" min="1" id="amount" placeholder="1">
+                                                <input type="number" id="amount" min="1" name="amount" placeholder="1">
                                             </div>
                                         </div>
                                         <div class="rate">
@@ -790,8 +1144,9 @@
                                             <ul class="rate-list list-reset">
                                                 <li class="rate-item">
                                                     <div class="rate-input">
-                                                        <input type="radio" name="radio" id="radio1" checked>
-                                                        <label for="radio1">Базовый (для камчадал)</label>
+                                                        <input type="radio" name="tour" id="radio1" value="base"
+                                                            checked>
+                                                        <label for="base">Базовый (для камчадал)</label>
                                                     </div>
                                                     <span class="price-price">
                                                         79 000 руб
@@ -799,8 +1154,9 @@
                                                 </li>
                                                 <li class="rate-item">
                                                     <div class="rate-input">
-                                                        <input type="radio" name="radio" id="radio2">
-                                                        <label for="radio2">Базовый + проживание</label>
+                                                        <input type="radio" name="tour" id="radio2"
+                                                            value="basicAccommodation">
+                                                        <label for="basicAccommodation">Базовый + проживание</label>
                                                     </div>
                                                     <span class="price-price">
                                                         99 000 руб
@@ -808,8 +1164,10 @@
                                                 </li>
                                                 <li class="rate-item">
                                                     <div class="rate-input">
-                                                        <input type="radio" name="radio" id="radio3">
-                                                        <label for="radio3">Базовый + проживание + долина
+                                                        <input type="radio" name="tour" id="radio3"
+                                                            value="BasicAccommodationValleyOfGeysers">
+                                                        <label for="BasicAccommodationValleyOfGeysers">Базовый +
+                                                            проживание + долина
                                                             гейзеров</label>
                                                     </div>
                                                     <span class="price-price">
@@ -935,7 +1293,7 @@
                                     <div class="img-block">
                                         <img src="img/footer_foto1.jpg" alt="">
                                         <img src="img/footer_foto2.jpg" alt="">
-                                           
+
                                     </div>
                                     <img src="img/footer_foto3.jpg" alt="">
                                     <img src="img/footer_foto4.jpg" alt="">
@@ -1041,7 +1399,9 @@
             </div>
         </footer>
     </div>
-
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="swiper.js"></script>
+    <script src="main.js"></script>
 </body>
 
 </html>
