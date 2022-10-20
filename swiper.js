@@ -26,6 +26,16 @@ const block1Swiper = new Swiper('.block1-swiper', {
     },
     slidesPerView: 1.5,
     speed: 500,
+    breakpoints: {
+      320: {
+        slidesPerView: 1,
+        spaceBetween: 40
+      },
+      1024: {
+        slidesPerView: 1.5,
+        spaceBetween: 20
+      }
+    }
 });
 
 const block2Swiper = new Swiper('.block2-swiper', {
@@ -36,6 +46,16 @@ const block2Swiper = new Swiper('.block2-swiper', {
   },
   slidesPerView: 1.5,
   speed: 500,
+  breakpoints: {
+    320: {
+      slidesPerView: 1,
+      spaceBetween: 40
+    },
+    1024: {
+      slidesPerView: 1.5,
+      spaceBetween: 20
+    }
+  }
 });
 
 const block3Swiper = new Swiper('.block3-swiper', {
@@ -46,6 +66,16 @@ const block3Swiper = new Swiper('.block3-swiper', {
   },
   slidesPerView: 1.5,
   speed: 500,
+  breakpoints: {
+    320: {
+      slidesPerView: 1,
+      spaceBetween: 40
+    },
+    1024: {
+      slidesPerView: 1.5,
+      spaceBetween: 20
+    }
+  }
 });
 
 const block5Swiper = new Swiper('.block5-swiper', {
@@ -56,6 +86,16 @@ const block5Swiper = new Swiper('.block5-swiper', {
   },
   slidesPerView: 1.5,
   speed: 500,
+  breakpoints: {
+    320: {
+      slidesPerView: 1,
+      spaceBetween: 40
+    },
+    1024: {
+      slidesPerView: 1.5,
+      spaceBetween: 20
+    }
+  }
 });
 
 const block6Swiper = new Swiper('.block6-swiper', {
@@ -66,6 +106,16 @@ const block6Swiper = new Swiper('.block6-swiper', {
   },
   slidesPerView: 1.5,
   speed: 500,
+  breakpoints: {
+    320: {
+      slidesPerView: 1,
+      spaceBetween: 40
+    },
+    1024: {
+      slidesPerView: 1.5,
+      spaceBetween: 20
+    }
+  }
 });
 
 const block7Swiper = new Swiper('.block7-swiper', {
@@ -76,4 +126,14 @@ const block7Swiper = new Swiper('.block7-swiper', {
   },
   slidesPerView: 1.5,
   speed: 500,
+  breakpoints: {
+    320: {
+      slidesPerView: 1,
+      spaceBetween: 40
+    },
+    1024: {
+      slidesPerView: 1.5,
+      spaceBetween: 20
+    }
+  }
 });

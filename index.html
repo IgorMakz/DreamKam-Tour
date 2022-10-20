@@ -6,28 +6,27 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
     <link rel="stylesheet" href="normalize.css">
     <link rel="stylesheet" href="styles.css">
+    <script defer src="./js/popup.js"></script>
     <title>DREAMKAM TOUR</title>
 </head>
 
 <body>
     <div class="wrapper">
         <div class="main-block">
-            <!-- Slider main container -->
             <div class="swiper main-swiper">
-                <!-- Additional required wrapper -->
                 <div class="swiper-wrapper main-wrapper">
                     <!-- Slides -->
                     <div class="swiper-slide main-slide">
-                        <img src="./img/main_img1.jpg" alt="" srcset="">
+                        <img src="./img/main_img1.jpg" alt="Фотография природы камчатки">
                     </div>
                     <div class="swiper-slide main-slide">
-                        <img src="./img/main_img2.jpg" alt="" srcset="">
+                        <img src="./img/main_img2.jpg" alt="Фотография природы камчатки">
                     </div>
                     <div class="swiper-slide main-slide">
-                        <img src="./img/main_img3.jpg" alt="" srcset="">
+                        <img src="./img/main_img3.jpg" alt="Фотография природы камчатки">
                     </div>
                 </div>
             </div>
@@ -40,27 +39,64 @@
                         <nav class="header-nav">
                             <ul class="nav-list list-reset flex">
                                 <li class="nav-item">
-                                    <a href="#timetable" class="nav-link">
+                                    <a href="#timetable" class="nav-link transition">
                                         Расписание тура
                                     </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="#" class="nav-link">
+                                    <a href="#request" class="nav-link transition">
                                         Как записаться
                                     </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="#" class="nav-link">
+                                    <a href="#team" class="nav-link transition">
                                         Команда
                                     </a>
                                 </li>
-                                <li class="nav-item">
-                                    <button class="btn-reset nav-btn">
-                                        Забронировать
-                                    </button>
-                                </li>
                             </ul>
                         </nav>
+                        <a href="#online" class="btn-reset nav-btn popup-link">
+                            Забронировать
+                        </a>
+                        <button class="burger-btn btn-reset">
+                        </button>
+                    </div>
+                </div>
+                <div class="burger-menu">
+                    <div class="menu-burger">
+                        <div class="menu-content">
+                            <ul class="menu-list list-reset">
+                                <li class="menu-item">
+                                    <a href="#timetable" class="menu-link transition">
+                                        Расписание тура
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="#entry" class="menu-link transition">
+                                        Как записаться
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="#team" class="menu-link transition">
+                                        Команда
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="#price" class="menu-link transition">
+                                        Стоимость
+                                    </a>
+                                </li>
+                            </ul>
+                            <button class="menu-close btn-reset">
+                                <svg width="19" height="18" viewbox="0 0 19 18" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <line x1="0.646447" y1="17.6464" x2="17.6464" y2="0.646447" stroke="#212121" />
+                                    <line y1="-0.5" x2="24.0416" y2="-0.5"
+                                        transform="matrix(-0.707107 -0.707107 -0.707107 0.707107 18 18)"
+                                        stroke="#212121" />
+                                </svg>
+                            </button>
+                        </div>
                     </div>
                 </div>
             </header>
@@ -80,7 +116,7 @@
                                     на&nbsp;всю
                                     жизнь.
                                 </p>
-                                <a href="#timetable" class="hero-btn btn-reset flex">
+                                <a href="#timetable" class="hero-btn flex btn-reset transition">
                                     <span class="btn-text">
                                         Расписание тура
                                     </span>
@@ -88,20 +124,22 @@
                                 </a>
                                 <ul class="hero-social list-reset flex">
                                     <li class="hero-item">
-                                        <a href="#" class="hero-link">
-                                            <svg fill="#DFDFDF" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 50 50"
-                                                width="50px" height="50px">
+                                        <a href="https://www.facebook.com" target="_blank" class="hero-link">
+                                            <svg width="12" height="20" viewbox="0 0 12 20" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
                                                 <path
-                                                    d="M 30.140625 2 C 26.870375 2 24.045399 2.9969388 22.0625 4.9667969 C 20.079601 6.936655 19 9.823825 19 13.367188 L 19 18 L 13 18 A 1.0001 1.0001 0 0 0 12 19 L 12 27 A 1.0001 1.0001 0 0 0 13 28 L 19 28 L 19 47 A 1.0001 1.0001 0 0 0 20 48 L 28 48 A 1.0001 1.0001 0 0 0 29 47 L 29 28 L 36 28 A 1.0001 1.0001 0 0 0 36.992188 27.125 L 37.992188 19.125 A 1.0001 1.0001 0 0 0 37 18 L 29 18 L 29 14 C 29 12.883334 29.883334 12 31 12 L 37 12 A 1.0001 1.0001 0 0 0 38 11 L 38 3.3457031 A 1.0001 1.0001 0 0 0 37.130859 2.3554688 C 36.247185 2.2382213 33.057174 2 30.140625 2 z M 30.140625 4 C 32.578477 4 34.935105 4.195047 36 4.2949219 L 36 10 L 31 10 C 28.802666 10 27 11.802666 27 14 L 27 19 A 1.0001 1.0001 0 0 0 28 20 L 35.867188 20 L 35.117188 26 L 28 26 A 1.0001 1.0001 0 0 0 27 27 L 27 46 L 21 46 L 21 27 A 1.0001 1.0001 0 0 0 20 26 L 14 26 L 14 20 L 20 20 A 1.0001 1.0001 0 0 0 21 19 L 21 13.367188 C 21 10.22255 21.920305 7.9269075 23.472656 6.3847656 C 25.025007 4.8426237 27.269875 4 30.140625 4 z" />
+                                                    d="M11.3098 0H8.72094C5.57656 0 3.54594 1.98843 3.54594 5.06678V7.03521H0.940157C0.696875 7.03521 0.5 7.22377 0.5 7.45661V10.8421C0.5 11.0749 0.696875 11.2621 0.940157 11.2621H3.54594V19.58C3.54594 19.8114 3.74281 20 3.98469 20H7.655C7.89969 20 8.09656 19.8114 8.09656 19.58V11.2606H11.3084C11.5517 11.2606 11.7486 11.0735 11.7486 10.8407L11.75 7.45661C11.7494 7.40097 11.7376 7.34604 11.7154 7.2952C11.6931 7.24435 11.6609 7.19866 11.6206 7.16092C11.5363 7.0809 11.4252 7.03647 11.3098 7.03664H8.09656V5.42247C8.09656 4.47111 8.33422 3.98829 9.63359 3.98829L11.3098 3.98257C11.5517 3.98257 11.7486 3.79544 11.7486 3.5626V0.41997C11.75 0.188558 11.5531 0 11.3098 0Z"
+                                                    fill="#DFDFDF" />
                                             </svg>
                                         </a>
                                     </li>
                                     <li class="hero-item">
-                                        <a href="#" class="hero-link">
-                                            <svg fill="#DFDFDF" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 50 50"
-                                                width="50px" height="50px">
+                                        <a href="https://www.instagram.com" target="_blank" class="hero-link">
+                                            <svg width="21" height="20" viewbox="0 0 21 20" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
                                                 <path
-                                                    d="M 16 3 C 8.8324839 3 3 8.8324839 3 16 L 3 34 C 3 41.167516 8.8324839 47 16 47 L 34 47 C 41.167516 47 47 41.167516 47 34 L 47 16 C 47 8.8324839 41.167516 3 34 3 L 16 3 z M 16 5 L 34 5 C 40.086484 5 45 9.9135161 45 16 L 45 34 C 45 40.086484 40.086484 45 34 45 L 16 45 C 9.9135161 45 5 40.086484 5 34 L 5 16 C 5 9.9135161 9.9135161 5 16 5 z M 37 11 A 2 2 0 0 0 35 13 A 2 2 0 0 0 37 15 A 2 2 0 0 0 39 13 A 2 2 0 0 0 37 11 z M 25 14 C 18.936712 14 14 18.936712 14 25 C 14 31.063288 18.936712 36 25 36 C 31.063288 36 36 31.063288 36 25 C 36 18.936712 31.063288 14 25 14 z M 25 16 C 29.982407 16 34 20.017593 34 25 C 34 29.982407 29.982407 34 25 34 C 20.017593 34 16 29.982407 16 25 C 16 20.017593 20.017593 16 25 16 z" />
+                                                    d="M5.72405 0H14.2955C15.811 0 17.2645 0.602039 18.3361 1.67368C19.4077 2.74531 20.0098 4.19876 20.0098 5.71429V14.2857C20.0098 15.8012 19.4077 17.2547 18.3361 18.3263C17.2645 19.398 15.811 20 14.2955 20H5.72405C4.20853 20 2.75508 19.398 1.68344 18.3263C0.611805 17.2547 0.00976563 15.8012 0.00976562 14.2857V5.71429C0.00976562 4.19876 0.611805 2.74531 1.68344 1.67368C2.75508 0.602039 4.20853 0 5.72405 0V0ZM10.0098 14.2857C11.1464 14.2857 12.2365 13.8342 13.0402 13.0305C13.844 12.2267 14.2955 11.1366 14.2955 10C14.2955 8.86336 13.844 7.77327 13.0402 6.96954C12.2365 6.16582 11.1464 5.71429 10.0098 5.71429C8.87312 5.71429 7.78304 6.16582 6.97931 6.96954C6.17558 7.77327 5.72405 8.86336 5.72405 10C5.72405 11.1366 6.17558 12.2267 6.97931 13.0305C7.78304 13.8342 8.87312 14.2857 10.0098 14.2857V14.2857ZM14.9298 6.34857C15.1 6.35428 15.2697 6.32568 15.4287 6.26447C15.5877 6.20325 15.7327 6.11067 15.8552 5.99224C15.9777 5.87382 16.0751 5.73196 16.1416 5.57511C16.2081 5.41827 16.2424 5.24965 16.2424 5.07929C16.2424 4.90892 16.2081 4.7403 16.1416 4.58346C16.0751 4.42661 15.9777 4.28476 15.8552 4.16633C15.7327 4.0479 15.5877 3.95532 15.4287 3.89411C15.2697 3.83289 15.1 3.80429 14.9298 3.81C14.6005 3.82105 14.2884 3.95962 14.0594 4.19645C13.8304 4.43328 13.7024 4.74984 13.7024 5.07929C13.7024 5.40874 13.8304 5.7253 14.0594 5.96213C14.2884 6.19896 14.6005 6.33752 14.9298 6.34857V6.34857Z"
+                                                    fill="#DFDFDF" />
                                             </svg>
                                         </a>
                                     </li>
@@ -131,6 +169,90 @@
                     </div>
                 </div>
             </section>
+            <div class="popup" id="online">
+                <div class="popup-body">
+                    <div class="popup-content">
+                        <button type="button" class="popup-close btn-reset close">
+                            <svg fill="#000000" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 50 50" width="25px"
+                                height="25px">
+                                <path
+                                    d="M 9.15625 6.3125 L 6.3125 9.15625 L 22.15625 25 L 6.21875 40.96875 L 9.03125 43.78125 L 25 27.84375 L 40.9375 43.78125 L 43.78125 40.9375 L 27.84375 25 L 43.6875 9.15625 L 40.84375 6.3125 L 25 22.15625 Z" />
+                            </svg>
+                        </button>
+                        <h2 class="popup-title">
+                            Онлайн-заявка
+                        </h2>
+                        <div class="popup-descr">
+                            <form action="" class="popup-form">
+                                <div class="popup-block">
+                                    <div class="popup-top">
+                                        <div class="popup-name">
+                                            <label for="name-popup">Имя уастника</label>
+                                            <input type="text" id="name-popup" placeholder="Имя" name="name">
+                                        </div>
+                                        <div class="popup-amount">
+                                            <label for="popup-amount">Количество человек</label>
+                                            <input type="number" id="popup-amount" min="1" name="amount"
+                                                placeholder="1">
+                                        </div>
+                                    </div>
+                                    <div class="popup-rate">
+                                        <h3 class="popup-subtitle">
+                                            Тариф
+                                        </h3>
+                                        <ul class="popup-list list-reset">
+                                            <li class="popup-item flex">
+                                                <div class="popup-input">
+                                                    <input type="radio" name="tour" id="popup-radio1" value="base"
+                                                        checked>
+                                                    <label for="popup-radio1">Базовый (для камчадал)</label>
+                                                </div>
+                                                <span class="price-price">
+                                                    79 000 руб
+                                                </span>
+                                            </li>
+                                            <li class="popup-item flex">
+                                                <div class="popup-input">
+                                                    <input type="radio" name="tour" id="popup-radio2"
+                                                        value="basicAccommodation">
+                                                    <label for="popup-radio2">Базовый + проживание</label>
+                                                </div>
+                                                <span class="price-price">
+                                                    99 000 руб
+                                                </span>
+                                            </li>
+                                            <li class="popup-item flex">
+                                                <div class="popup-input">
+                                                    <input type="radio" name="tour" id="popup-radio3"
+                                                        value="BasicAccommodationValleyOfGeysers">
+                                                    <label for="popup-radio3">Базовый +
+                                                        проживание + долина
+                                                        гейзеров</label>
+                                                </div>
+                                                <span class="price-price">
+                                                    179 000 руб
+                                                </span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="popup-date">
+                                        <label for="date">Даты тура</label>
+                                        <input type="date" name="date" id="date">
+                                    </div>
+                                    <div class="popup-comment">
+                                        <label for="comment">Комментарий</label>
+                                        <textarea name="comment" id="comment" cols="30" rows="10"
+                                            placeholder="Напишите ваш комментарий"></textarea>
+                                    </div>
+                                </div>
+                                <button type="submit" class="popup-btn btn-reset close">
+                                    Отправить заявку
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
         <main class="main">
             <section class="travel">
@@ -251,7 +373,7 @@
                             <div class="swiper block1-swiper">
                                 <div class="swiper-wrapper block1-wrapper">
                                     <div class="swiper-slide block1-slide">
-                                        <a href="#" class="block1-popup">
+                                        <a href="#block1-slide1" class="block1-popup popup-link">
                                             <img src="./img/block1_img1_opt.jpg" alt="" srcset="">
                                             <div class="slide-descr">
                                                 <h4 class="slide-subtitle">
@@ -264,7 +386,7 @@
                                         </a>
                                     </div>
                                     <div class="swiper-slide block1-slide">
-                                        <a href="#" class="block1-popup">
+                                        <a href="#block1-slide2" class="block1-popup popup-link">
                                             <img src="./img/block1_img2_opt.jpg" alt="" srcset="">
                                             <div class="slide-descr">
                                                 <h4 class="slide-subtitle">
@@ -277,7 +399,7 @@
                                         </a>
                                     </div>
                                     <div class="swiper-slide block1-slide">
-                                        <a href="#" class="block1-popup">
+                                        <a href="#block1-slide3" class="block1-popup popup-link">
                                             <img src="./img/block1_img3_opt.jpg" alt="" srcset="">
                                             <div class="slide-descr">
                                                 <h4 class="slide-subtitle">
@@ -290,7 +412,7 @@
                                         </a>
                                     </div>
                                     <div class="swiper-slide block1-slide">
-                                        <a href="#" class="block1-popup">
+                                        <a href="#block1-slide4" class="block1-popup popup-link">
                                             <img src="./img/block1_img4_opt.jpg" alt="" srcset="">
                                             <div class="slide-descr">
                                                 <h4 class="slide-subtitle">
@@ -303,7 +425,7 @@
                                         </a>
                                     </div>
                                     <div class="swiper-slide block1-slide">
-                                        <a href="#" class="block1-popup">
+                                        <a href="#block1-slide5" class="block1-popup popup-link">
                                             <img src="./img/block1_img5_opt.jpg" alt="" srcset="">
                                             <div class="slide-descr">
                                                 <h4 class="slide-subtitle">
@@ -319,6 +441,192 @@
                                 </div>
                                 <div class="swiper-button-prev block1-swiper-prev"></div>
                                 <div class="swiper-button-next block1-swiper-next"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="popup" id="block1-slide1">
+                        <div class="popup-body">
+                            <div class="popup-content block-background1 block-background">
+                                <button type="button" class="popup-close btn-reset close">
+                                    <svg width="38" height="38" viewbox="0 0 38 38" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <rect x="-0.5" y="0.5" width="37" height="37" rx="18.5"
+                                            transform="matrix(-1 0 0 1 37 0)" stroke="white" />
+                                        <line x1="9.64645" y1="27.6464" x2="26.6464" y2="10.6464" stroke="white" />
+                                        <line y1="-0.5" x2="24.0416" y2="-0.5"
+                                            transform="matrix(-0.707107 -0.707107 -0.707107 0.707107 27 28)"
+                                            stroke="white" />
+                                    </svg>
+                                </button>
+                                <div class="block-content">
+                                    <h5 class="popup-title  block-subtitle">
+                                        Паратунка
+                                    </h5>
+                                    <p class="popup-descr block-descr">
+                                        Поселок Паратунка находится в&nbsp;долине одноименной реки, в&nbsp;30&nbsp;км
+                                        от&nbsp;аэропорта, известен лечебными термальными источниками. На&nbsp;его
+                                        территории, да&nbsp;и&nbsp;вдоль трассы, находится множество баз отдыха
+                                        с&nbsp;бассейнами под открытым небом&nbsp;&mdash; в&nbsp;них можно отдыхать
+                                        в&nbsp;любое время суток. Для проживающих на&nbsp;базах, как правило, стоимость
+                                        купания входит в&nbsp;стоимость проживания. В&nbsp;горячей водичке
+                                        &laquo;отмокают&raquo; после трудов и&nbsp;походов местные жители и&nbsp;гости
+                                        Камчатки.
+                                    </p>
+                                </div>
+                                <button type="submit" class="popup-btn btn-reset close block-btn">
+                                    Вернуться к маршруту
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="popup" id="block1-slide2">
+                        <div class="popup-body">
+                            <div class="popup-content block-background2 block-background">
+                                <button type="button" class="popup-close btn-reset close">
+                                    <svg width="38" height="38" viewbox="0 0 38 38" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <rect x="-0.5" y="0.5" width="37" height="37" rx="18.5"
+                                            transform="matrix(-1 0 0 1 37 0)" stroke="white" />
+                                        <line x1="9.64645" y1="27.6464" x2="26.6464" y2="10.6464" stroke="white" />
+                                        <line y1="-0.5" x2="24.0416" y2="-0.5"
+                                            transform="matrix(-0.707107 -0.707107 -0.707107 0.707107 27 28)"
+                                            stroke="white" />
+                                    </svg>
+                                </button>
+                                <div class="block-content">
+                                    <h5 class="popup-title  block-subtitle">
+                                        Памятник «Здесь начинается Россия»
+                                    </h5>
+                                    <p class="popup-descr block-descr">
+                                        Памятник &laquo;Здесь начинается Россия&raquo; посвящен медведице
+                                        с&nbsp;медвежонком, которые вытесаны из&nbsp;натурального камня
+                                        в&nbsp;натуральную величину с&nbsp;соблюдением реалистичных пропорций
+                                        в&nbsp;естественном цвете.
+                                        Медведи, как известно, являются символом Камчатки, самыми почитаемыми
+                                        и&nbsp;любимыми животными региона. Именно тут их&nbsp;проще всего увидеть
+                                        в&nbsp;их&nbsp;естественной среде обитания в&nbsp;дикой природе. Кроме того,
+                                        медведь также еще и&nbsp;один из&nbsp;символом России в&nbsp;целом, своего рода
+                                        олицетворение ее&nbsp;спокойной силы и&nbsp;уникальной стойкости. Кроме того,
+                                        памятник также символизирует и&nbsp;то, что Камчатка, несмотря на&nbsp;то, что
+                                        является удаленным от&nbsp;центральной части полуостровом, все-таки относится
+                                        к&nbsp;России и&nbsp;является ее&nbsp;неотъемлемой частью.
+                                    </p>
+                                </div>
+                                <button type="submit" class="popup-btn btn-reset close block-btn">
+                                    Вернуться к маршруту
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="popup" id="block1-slide3">
+                        <div class="popup-body">
+                            <div class="popup-content block-background3 block-background">
+                                <button type="button" class="popup-close btn-reset close">
+                                    <svg width="38" height="38" viewbox="0 0 38 38" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <rect x="-0.5" y="0.5" width="37" height="37" rx="18.5"
+                                            transform="matrix(-1 0 0 1 37 0)" stroke="white" />
+                                        <line x1="9.64645" y1="27.6464" x2="26.6464" y2="10.6464" stroke="white" />
+                                        <line y1="-0.5" x2="24.0416" y2="-0.5"
+                                            transform="matrix(-0.707107 -0.707107 -0.707107 0.707107 27 28)"
+                                            stroke="white" />
+                                    </svg>
+                                </button>
+                                <div class="block-content">
+                                    <h5 class="popup-title  block-subtitle">
+                                        Корякская сопка
+                                    </h5>
+                                    <p class="popup-descr block-descr">
+                                        Вулкан Корякская сопка представляет собой типичный стратовулкан с&nbsp;конусом
+                                        правильной формы. Вершина с&nbsp;западной стороны срезана. Относительная высота
+                                        отличается: на&nbsp;северном склоне она равна 2300&nbsp;метров,
+                                        на&nbsp;западном&nbsp;&mdash; 3300&nbsp;метров. С&nbsp;восточной и&nbsp;северной
+                                        сторон вершина состоит из&nbsp;мощных выходов андезитов. Это монолитные
+                                        вулканические породы. Здесь&nbsp;же находятся обширный цирк (котловина
+                                        в&nbsp;виде амфитеатра) диаметром 500 метров и&nbsp;два ледника длиной 1&nbsp;км
+                                        и&nbsp;4,2&nbsp;км. Ниже склоны покрыты кедровым стлаником и&nbsp;каменной
+                                        березой. Склоны вулкана Корякская сопка достаточно крутые, ближе к&nbsp;вершине
+                                        крутизна составляет 30&ndash;35&deg;, у&nbsp;подножия&nbsp;&mdash;
+                                        15&ndash;20&deg;.
+                                    </p>
+                                </div>
+                                <button type="submit" class="popup-btn btn-reset close block-btn">
+                                    Вернуться к маршруту
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="popup" id="block1-slide4">
+                        <div class="popup-body">
+                            <div class="popup-content block-background4 block-background">
+                                <button type="button" class="popup-close btn-reset close">
+                                    <svg width="38" height="38" viewbox="0 0 38 38" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <rect x="-0.5" y="0.5" width="37" height="37" rx="18.5"
+                                            transform="matrix(-1 0 0 1 37 0)" stroke="white" />
+                                        <line x1="9.64645" y1="27.6464" x2="26.6464" y2="10.6464" stroke="white" />
+                                        <line y1="-0.5" x2="24.0416" y2="-0.5"
+                                            transform="matrix(-0.707107 -0.707107 -0.707107 0.707107 27 28)"
+                                            stroke="white" />
+                                    </svg>
+                                </button>
+                                <div class="block-content">
+                                    <h5 class="popup-title  block-subtitle">
+                                        Авачинская сопка
+                                    </h5>
+                                    <p class="popup-descr block-descr">
+                                        Авачинская сопка необычайно популярна среди жителей города и&nbsp;его гостей.
+                                        Вулкан является визитной карточкой Камчатского края и&nbsp;одним из&nbsp;самых
+                                        активных исполинов полуострова. Хотя его ритм работы переменчив, активность
+                                        на&nbsp;нем проявляется постоянно. Склоны покрыты лесом из&nbsp;каменной березы
+                                        и&nbsp;кедрового стланика, а&nbsp;ближе к&nbsp;вершине располагаются снежники
+                                        и&nbsp;ледники. Последние имеют свои названия, получившие
+                                        их&nbsp;от&nbsp;первопроходцев, известных людей края и&nbsp;почетных жителей.
+                                        Так, например, на&nbsp;здесь лежат ледники: Халактырский, Арсеньева,
+                                        Новограбленова. Главными жителями Авачинского вулкана являются евражки или
+                                        камчатские суслики. Самые многочисленные кланы зверьков обитают
+                                        на&nbsp;Авачинском перевале. Эти грызуны очень любопытны и&nbsp;совершенно
+                                        не&nbsp;боятся туристов.
+                                    </p>
+                                </div>
+                                <button type="submit" class="popup-btn btn-reset close block-btn">
+                                    Вернуться к маршруту
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="popup" id="block1-slide5">
+                        <div class="popup-body">
+                            <div class="popup-content block-background5 block-background">
+                                <button type="button" class="popup-close btn-reset close">
+                                    <svg width="38" height="38" viewbox="0 0 38 38" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <rect x="-0.5" y="0.5" width="37" height="37" rx="18.5"
+                                            transform="matrix(-1 0 0 1 37 0)" stroke="white" />
+                                        <line x1="9.64645" y1="27.6464" x2="26.6464" y2="10.6464" stroke="white" />
+                                        <line y1="-0.5" x2="24.0416" y2="-0.5"
+                                            transform="matrix(-0.707107 -0.707107 -0.707107 0.707107 27 28)"
+                                            stroke="white" />
+                                    </svg>
+                                </button>
+                                <div class="block-content">
+                                    <h5 class="popup-title  block-subtitle">
+                                        Козельский вулкан
+                                    </h5>
+                                    <p class="popup-descr block-descr">
+                                        Высота вулкана Козельский&nbsp;&mdash; 2190&nbsp;метров, но&nbsp;ученые
+                                        выяснили, что изначально он&nbsp;был выше примерно на&nbsp;500 метров и&nbsp;мог
+                                        сравниться с&nbsp;Авачинским вулканом. Вследствие двух взрывов его вершина была
+                                        разрушена, и&nbsp;на&nbsp;склонах появились побочные конусы. Кратер Козельского
+                                        заполнен ледником, из&nbsp;него вытекает речка Мутнушка, названная так
+                                        по&nbsp;цвету своих вод. Южные и&nbsp;восточные склоны вулкана хранят следы
+                                        извержений Авачинского вулкана&nbsp;&mdash; они покрыты мелким шлаком и&nbsp;так
+                                        называемыми вулканическими бомбами&nbsp;&mdash; кусками застывшей лавы.
+                                    </p>
+                                </div>
+                                <button type="submit" class="popup-btn btn-reset close block-btn">
+                                    Вернуться к маршруту
+                                </button>
                             </div>
                         </div>
                     </div>
@@ -349,7 +657,7 @@
                                 <div class="swiper-wrapper">
                                     <!-- Slides -->
                                     <div class="swiper-slide block2-slide">
-                                        <a href="#" class="block1-popup">
+                                        <a href="#block2-slide1" class="popup-link">
                                             <img src="./img/block2_img1_opt.jpg" alt="" srcset="">
                                             <div class="slide-descr">
                                                 <h4 class="slide-subtitle">
@@ -363,7 +671,7 @@
                                         </a>
                                     </div>
                                     <div class="swiper-slide block2-slide">
-                                        <a href="#" class="block1-popup">
+                                        <a href="#block2-slide2" class="popup-link">
                                             <img src="./img/block2_img2_opt.jpg" alt="" srcset="">
                                             <div class="slide-descr">
                                                 <h4 class="slide-subtitle">
@@ -376,7 +684,7 @@
                                         </a>
                                     </div>
                                     <div class="swiper-slide block2-slide">
-                                        <a href="#" class="block1-popup">
+                                        <a href="#block2-slide3" class="popup-link">
                                             <img src="./img/block2_img3_opt.jpg" alt="" srcset="">
                                             <div class="slide-descr">
                                                 <h4 class="slide-subtitle">
@@ -411,7 +719,132 @@
                             </div>
                         </div>
                     </div>
-
+                    <div class="popup" id="block2-slide1">
+                        <div class="popup-body">
+                            <div class="popup-content block-background2_1 block-background">
+                                <button type="button" class="popup-close btn-reset close">
+                                    <svg width="38" height="38" viewbox="0 0 38 38" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <rect x="-0.5" y="0.5" width="37" height="37" rx="18.5"
+                                            transform="matrix(-1 0 0 1 37 0)" stroke="white" />
+                                        <line x1="9.64645" y1="27.6464" x2="26.6464" y2="10.6464" stroke="white" />
+                                        <line y1="-0.5" x2="24.0416" y2="-0.5"
+                                            transform="matrix(-0.707107 -0.707107 -0.707107 0.707107 27 28)"
+                                            stroke="white" />
+                                    </svg>
+                                </button>
+                                <div class="block-content">
+                                    <h5 class="popup-title  block-subtitle">
+                                        Вилючинский водопад
+                                    </h5>
+                                    <p class="popup-descr block-descr">
+                                        Водопад находится на&nbsp;северо-западном склоне одноименного
+                                        вулкана, в&nbsp;40&nbsp;км по&nbsp;прямой от&nbsp;Петропавловска-Камчатского.
+                                        Это один из&nbsp;самых посещаемых водопадов на&nbsp;Камчатке: к&nbsp;нему каждый
+                                        год приезжают отдохнуть тысячи туристов и&nbsp;местных жителей.
+                                        Высота Вилючинского водопада&nbsp;&mdash; 40&nbsp;м. Человек рядом с&nbsp;ним
+                                        кажется совсем маленьким, а&nbsp;скалу, с&nbsp;которой льется поток, трудно даже
+                                        целиком вместить в&nbsp;кадр&nbsp;&mdash; по&nbsp;величине она сравнима
+                                        17-этажным зданием.
+                                        Вилючинский водопад образуется в&nbsp;результате таяния ледников вулкана: вода
+                                        стекается в&nbsp;горную речку и&nbsp;падает с&nbsp;вершины высокого скалистого
+                                        ущелья в&nbsp;ледник, покрытый нетающим снежником. В&nbsp;любое время года путь
+                                        наверх к&nbsp;водопаду проходит по&nbsp;широкой снежной дороге. С&nbsp;высоты
+                                        его подножия видно горную долину и&nbsp;соседнюю сопку. Если найти тропу
+                                        на&nbsp;левом склоне ущелья и&nbsp;подняться по&nbsp;распадку над горной рекой,
+                                        на&nbsp;высоте километра откроется еще более впечатляющий панорамный вид.
+                                    </p>
+                                </div>
+                                <button type="submit" class="popup-btn btn-reset close block-btn">
+                                    Вернуться к маршруту
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="popup" id="block2-slide2">
+                        <div class="popup-body">
+                            <div class="popup-content block-background2_2 block-background">
+                                <button type="button" class="popup-close btn-reset close">
+                                    <svg width="38" height="38" viewbox="0 0 38 38" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <rect x="-0.5" y="0.5" width="37" height="37" rx="18.5"
+                                            transform="matrix(-1 0 0 1 37 0)" stroke="white" />
+                                        <line x1="9.64645" y1="27.6464" x2="26.6464" y2="10.6464" stroke="white" />
+                                        <line y1="-0.5" x2="24.0416" y2="-0.5"
+                                            transform="matrix(-0.707107 -0.707107 -0.707107 0.707107 27 28)"
+                                            stroke="white" />
+                                    </svg>
+                                </button>
+                                <div class="block-content">
+                                    <h5 class="popup-title  block-subtitle">
+                                        Вурхне-паратунские термальные источники
+                                    </h5>
+                                    <p class="popup-descr block-descr">
+                                        Источники расположены в&nbsp;долине реки Паратунка
+                                        на&nbsp;северо-восточном склоне сопки Горячая. Сами термальные источники
+                                        возвышаются над дном долины примерно на&nbsp;уровне 80&nbsp;метров.
+                                        Горячие ключи, а&nbsp;их&nbsp;16&nbsp;только постоянно действующих и&nbsp;около
+                                        десятка периодических, образуют три параллельно текущих теплых ручья.
+                                        В&nbsp;70&nbsp;метрах от&nbsp;источников ручья, имеющего довольно крутой уклон,
+                                        находится теплый водопад. Температура воды в&nbsp;источниках
+                                        от&nbsp;+39&nbsp;до&nbsp;+70&nbsp;градусов.
+                                        Здесь оборудовано несколько ванн для купания, которые расположились
+                                        на&nbsp;склоне ручья, стекающего с&nbsp;сопки. Удивительная красота этого места
+                                        манит многочисленных туристов и&nbsp;местных жителей.
+                                        И&nbsp;не&nbsp;зря: с&nbsp;сопки Горячая открывается удивительной красоты
+                                        пейзаж&nbsp;&mdash; вдали виднеется конус сопки Бархатная, немного южнее
+                                        скалистый конус Вилючинского вулкана. А&nbsp;еще березовые рощи и&nbsp;красивые
+                                        поляны, покрытые ровным травяным покровом.
+                                    </p>
+                                </div>
+                                <button type="submit" class="popup-btn btn-reset close block-btn">
+                                    Вернуться к маршруту
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="popup" id="block2-slide3">
+                        <div class="popup-body">
+                            <div class="popup-content block-background2_3 block-background">
+                                <button type="button" class="popup-close btn-reset close">
+                                    <svg width="38" height="38" viewbox="0 0 38 38" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <rect x="-0.5" y="0.5" width="37" height="37" rx="18.5"
+                                            transform="matrix(-1 0 0 1 37 0)" stroke="white" />
+                                        <line x1="9.64645" y1="27.6464" x2="26.6464" y2="10.6464" stroke="white" />
+                                        <line y1="-0.5" x2="24.0416" y2="-0.5"
+                                            transform="matrix(-0.707107 -0.707107 -0.707107 0.707107 27 28)"
+                                            stroke="white" />
+                                    </svg>
+                                </button>
+                                <div class="block-content">
+                                    <h5 class="popup-title  block-subtitle">
+                                        Вилючинский вулкан
+                                    </h5>
+                                    <p class="popup-descr block-descr">
+                                        Вулкан относится к&nbsp;стратовулканам, то&nbsp;есть это возвышенность
+                                        правильной конической формы, образованная поочередными извержениями горных пород
+                                        и&nbsp;вязкой лавы. Его высота&nbsp;&mdash; 2175&nbsp;м над уровнем моря, что
+                                        ниже, например, соседнего Мутновского, но&nbsp;из-за крутых склонов Вилючинская
+                                        сопка заметно сложнее для восхождения.
+                                        Снег на&nbsp;вершине не&nbsp;тает: он&nbsp;копится годами и&nbsp;превращается
+                                        в&nbsp;фирн&nbsp;&mdash; среднее состояние между плотным слежавшимся снегом
+                                        и&nbsp;льдом. В&nbsp;теплый сезон на&nbsp;склонах проявляются радиально
+                                        расходящиеся от&nbsp;пика полосы: темно-серые хребты, чередующиеся с&nbsp;белыми
+                                        оврагами. Зимой вулкан покрывается снегом от&nbsp;основания до&nbsp;вершины.
+                                        Сейчас Вилючинский вулкан признан потухшим, но&nbsp;о&nbsp;его прежней
+                                        активности напоминают десятки лавовых куполов, шлаковых конусов и&nbsp;следы
+                                        выходов сернистых испарений. Кроме того, вулканологи и&nbsp;альпинисты
+                                        до&nbsp;сих пор фиксируют выбросы сернистого газа и&nbsp;пара на&nbsp;его
+                                        вершине.
+                                    </p>
+                                </div>
+                                <button type="submit" class="popup-btn btn-reset close block-btn">
+                                    Вернуться к маршруту
+                                </button>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <article class="expectations">
                     <div class="expectations-container">
@@ -421,42 +854,62 @@
                                     На&nbsp;протяжении маршрута вас ожидает:
                                 </h3>
                                 <ul class="expectations-list list-reset flex">
-                                    <li class="expectations-item item1">
-                                        <h4 class="expectations-subtitle">
-                                            Аудиосопровождение
-                                        </h4>
-                                        <p class="expectations-descr">
-                                            Новый способ увидеть и&nbsp;услышать, то&nbsp;место, где вы&nbsp;находитесь.
-                                            С&nbsp;помощью аудиогида вы&nbsp;сможете совершить увлекательную экскурсию
-                                            по&nbsp;городу.
-                                        </p>
+                                    <li class="expectations-item ">
+                                        <div class="expectations-block item1"></div>
+                                        <div class="expectations-element">
+                                            <h4 class="expectations-subtitle">
+                                                Аудиосопровождение
+                                            </h4>
+                                            <p class="expectations-descr">
+                                                Новый способ увидеть и&nbsp;услышать, то&nbsp;место, где
+                                                вы&nbsp;находитесь.
+                                                С&nbsp;помощью аудиогида вы&nbsp;сможете совершить увлекательную
+                                                экскурсию
+                                                по&nbsp;городу.
+                                            </p>
+                                        </div>
+
                                     </li>
-                                    <li class="expectations-item item2">
-                                        <h4 class="expectations-subtitle">
-                                            Разнообразное питание
-                                        </h4>
-                                        <p class="expectations-descr">
-                                            Каждый обед мы&nbsp;готовим с&nbsp;большой любовью. Кормим вас традиционными
-                                            камчатскими блюдами. Еда&nbsp;&mdash; залог хорошего отдыха!
-                                        </p>
+                                    <li class="expectations-item">
+                                        <div class="expectations-block item2"></div>
+                                        <div class="expectations-element">
+                                            <h4 class="expectations-subtitle">
+                                                Разнообразное питание
+                                            </h4>
+                                            <p class="expectations-descr">
+                                                Каждый обед мы&nbsp;готовим с&nbsp;большой любовью. Кормим вас
+                                                традиционными
+                                                камчатскими блюдами. Еда&nbsp;&mdash; залог хорошего отдыха!
+                                            </p>
+                                        </div>
+
                                     </li>
-                                    <li class="expectations-item item3">
-                                        <h4 class="expectations-subtitle">
-                                            Безопасность на&nbsp;маршруте
-                                        </h4>
-                                        <p class="expectations-descr">
-                                            Наша команда проводит инструктаж, рассказывает как правильно себя вести, как
-                                            избежать опасных ситуаций.
-                                        </p>
+                                    <li class="expectations-item">
+                                        <div class="expectations-block item3"></div>
+                                        <div class="expectations-element">
+                                            <h4 class="expectations-subtitle">
+                                                Безопасность на&nbsp;маршруте
+                                            </h4>
+                                            <p class="expectations-descr">
+                                                Наша команда проводит инструктаж, рассказывает как правильно себя вести,
+                                                как
+                                                избежать опасных ситуаций.
+                                            </p>
+                                        </div>
+
                                     </li>
-                                    <li class="expectations-item item4">
-                                        <h4 class="expectations-subtitle">
-                                            Потрясающие фото
-                                        </h4>
-                                        <p class="expectations-descr">
-                                            Можете не&nbsp;переживать, что не&nbsp;успели сделать фото. Наш фотограф
-                                            успевает везде и&nbsp;за&nbsp;всеми. У&nbsp;вас будут самые лучшие фото!
-                                        </p>
+                                    <li class="expectations-item">
+                                        <div class="expectations-block item4"></div>
+                                        <div class="expectations-element">
+                                            <h4 class="expectations-subtitle">
+                                                Потрясающие фото
+                                            </h4>
+                                            <p class="expectations-descr">
+                                                Можете не&nbsp;переживать, что не&nbsp;успели сделать фото. Наш фотограф
+                                                успевает везде и&nbsp;за&nbsp;всеми. У&nbsp;вас будут самые лучшие фото!
+                                            </p>
+                                        </div>
+
                                     </li>
                                 </ul>
                             </div>
@@ -470,7 +923,7 @@
                                 <div class="swiper-wrapper">
                                     <!-- Slides -->
                                     <div class="swiper-slide block3-slide">
-                                        <a href="#" class="block1-popup">
+                                        <a href="#block3-slide1" class="popup-link">
                                             <img src="./img/block3_img1_opt.jpg" alt="" srcset="">
                                             <div class="slide-descr">
                                                 <h4 class="slide-subtitle">
@@ -483,7 +936,7 @@
                                         </a>
                                     </div>
                                     <div class="swiper-slide block3-slide">
-                                        <a href="#" class="block1-popup">
+                                        <a href="#block3-slide2" class="popup-link">
                                             <img src="./img/block3_img2_opt.jpg" alt="" srcset="">
                                             <div class="slide-descr">
                                                 <h4 class="slide-subtitle">
@@ -496,7 +949,7 @@
                                         </a>
                                     </div>
                                     <div class="swiper-slide block3-slide">
-                                        <a href="#" class="block1-popup">
+                                        <a href="#block3-slide3" class="popup-link">
                                             <img src="./img/block3_img3_opt.jpg" alt="" srcset="">
                                             <div class="slide-descr">
                                                 <h4 class="slide-subtitle">
@@ -547,6 +1000,125 @@
 
                         </div>
                     </div>
+                    <div class="popup" id="block3-slide1">
+                        <div class="popup-body">
+                            <div class="popup-content block-background3_1 block-background">
+                                <button type="button" class="popup-close btn-reset close">
+                                    <svg width="38" height="38" viewbox="0 0 38 38" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <rect x="-0.5" y="0.5" width="37" height="37" rx="18.5"
+                                            transform="matrix(-1 0 0 1 37 0)" stroke="white" />
+                                        <line x1="9.64645" y1="27.6464" x2="26.6464" y2="10.6464" stroke="white" />
+                                        <line y1="-0.5" x2="24.0416" y2="-0.5"
+                                            transform="matrix(-0.707107 -0.707107 -0.707107 0.707107 27 28)"
+                                            stroke="white" />
+                                    </svg>
+                                </button>
+                                <div class="block-content">
+                                    <h5 class="popup-title  block-subtitle">
+                                        Вулкан Вачкажец
+                                    </h5>
+                                    <p class="popup-descr block-descr">
+                                        Горный массив Вачкажец располагается к&nbsp;западу
+                                        от&nbsp;Петропавловска-Камчатского и&nbsp;является частью Южно-Быстринского
+                                        хребта. Его удаленность от&nbsp;города сравнительно не&nbsp;большая&nbsp;&mdash;
+                                        всего 80&nbsp;км. Самое высокое место в&nbsp;этой горной гряде&nbsp;&mdash; гора
+                                        Вачкажец, которая достигает 1556 метров над уровнем моря.
+                                        Горный массив является памятником природы и&nbsp;включён в&nbsp;&laquo;Перечень
+                                        особо охраняемых природных территорий регионального и&nbsp;местного значения
+                                        Камчатского края&raquo;.
+                                        Название горы пошло от&nbsp;старинного слова коренных ительменов
+                                        &laquo;Уачькагачь&raquo;, что означает &laquo;Текущая с&nbsp;каменного
+                                        хребта&raquo;.
+                                        Еще одна интересная этимологическая особенность заключается в&nbsp;том, что
+                                        из-за сложности прочтения и&nbsp;восприятия, а&nbsp;также написания,
+                                        в&nbsp;русском варианте ительменское слово &laquo;Уач&raquo; вполне допустимо
+                                        изменять на&nbsp;&laquo;Вачь&raquo;, что вполне логично, так как переводится,
+                                        как &laquo;камень&raquo;!
+                                    </p>
+                                </div>
+                                <button type="submit" class="popup-btn btn-reset close block-btn">
+                                    Вернуться к маршруту
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="popup" id="block3-slide2">
+                        <div class="popup-body">
+                            <div class="popup-content block-background3_2 block-background">
+                                <button type="button" class="popup-close btn-reset close">
+                                    <svg width="38" height="38" viewbox="0 0 38 38" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <rect x="-0.5" y="0.5" width="37" height="37" rx="18.5"
+                                            transform="matrix(-1 0 0 1 37 0)" stroke="white" />
+                                        <line x1="9.64645" y1="27.6464" x2="26.6464" y2="10.6464" stroke="white" />
+                                        <line y1="-0.5" x2="24.0416" y2="-0.5"
+                                            transform="matrix(-0.707107 -0.707107 -0.707107 0.707107 27 28)"
+                                            stroke="white" />
+                                    </svg>
+                                </button>
+                                <div class="block-content">
+                                    <h5 class="popup-title  block-subtitle">
+                                        Горный массив Вачкажец
+                                    </h5>
+                                    <p class="popup-descr block-descr">
+                                        В&nbsp;80&nbsp;км от&nbsp;города Петропавловска-Камчатского возвышается
+                                        знаменитый горный массив Вачкажец. Ледниковые цирки и&nbsp;бескрайние долины
+                                        дополняют живописный горный ландшафт, делая Вачкажец один из&nbsp;наиболее
+                                        интересных и&nbsp;достойных посещения памятников природы.
+                                        Забравшись на&nbsp;вершину, можно лицезреть красивые тихие лесные озера
+                                        с&nbsp;необычайно прозрачной водой, уютно расположившиеся в&nbsp;долинах
+                                        бескрайнего горного хребта.
+                                    </p>
+                                </div>
+                                <button type="submit" class="popup-btn btn-reset close block-btn">
+                                    Вернуться к маршруту
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="popup" id="block3-slide3">
+                        <div class="popup-body">
+                            <div class="popup-content block-background3_3 block-background">
+                                <button type="button" class="popup-close btn-reset close">
+                                    <svg width="38" height="38" viewbox="0 0 38 38" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <rect x="-0.5" y="0.5" width="37" height="37" rx="18.5"
+                                            transform="matrix(-1 0 0 1 37 0)" stroke="white" />
+                                        <line x1="9.64645" y1="27.6464" x2="26.6464" y2="10.6464" stroke="white" />
+                                        <line y1="-0.5" x2="24.0416" y2="-0.5"
+                                            transform="matrix(-0.707107 -0.707107 -0.707107 0.707107 27 28)"
+                                            stroke="white" />
+                                    </svg>
+                                </button>
+                                <div class="block-content">
+                                    <h5 class="popup-title  block-subtitle">
+                                        Озеро Тахколоч
+                                    </h5>
+                                    <p class="popup-descr block-descr">
+                                        Этот красивый водоем возник у&nbsp;подножия вулкана Вачкажец, в&nbsp;котловине,
+                                        образовавшейся после давнего взрыва и&nbsp;сформировавшегося потом ледника.
+                                        Тогда&nbsp;же образовался и&nbsp;сам массив Вачкажец в&nbsp;том виде,
+                                        в&nbsp;каком его сейчас видят люди. Размеры озера не&nbsp;очень большие, если
+                                        сравнить с&nbsp;другими подобными водоемами. Соотношение длины и&nbsp;ширины
+                                        примерно 150&nbsp;на 100&nbsp;метров. В&nbsp;глубину оно достигает шести метров.
+                                        Из&nbsp;ледника в&nbsp;одном из&nbsp;кратеров Вачкажца берет свое начало
+                                        одноименная с&nbsp;озером река, которая несется вниз, разлетаясь прозрачными
+                                        брызгами и&nbsp;образуя водопады, но&nbsp;питает озеро не&nbsp;она,
+                                        а&nbsp;небольшая речка Ключевая, отходящая от&nbsp;нее. Поэтому в&nbsp;озере
+                                        вода пресная и&nbsp;чистая, ледниковая. Туристы, прибывающие к&nbsp;Вачкажцу,
+                                        чтобы совершить на&nbsp;него восхождение, не&nbsp;могут пропустить озеро
+                                        Тахколоч. Его спокойная красота притягивает взоры. Вокруг озера много
+                                        растительности, и&nbsp;любители ботаники могут тут найти отличное применение
+                                        своему увлечению.
+                                    </p>
+                                </div>
+                                <button type="submit" class="popup-btn btn-reset close block-btn">
+                                    Вернуться к маршруту
+                                </button>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div class="block4-container">
                     <div class="container">
@@ -591,7 +1163,7 @@
                             <div class="swiper block5-swiper">
                                 <div class="swiper-wrapper">
                                     <div class="swiper-slide block5-slide">
-                                        <a href="#" class="block1-popup">
+                                        <a href="#block5-slide1" class="popup-link">
                                             <img src="./img/block5_img1_opt.jpg" alt="" srcset="">
                                             <div class="slide-descr">
                                                 <h4 class="slide-subtitle">
@@ -605,7 +1177,7 @@
                                         </a>
                                     </div>
                                     <div class="swiper-slide block5-slide">
-                                        <a href="#" class="block1-popup">
+                                        <a href="#block5-slide2" class="popup-link">
                                             <img src="./img/block5_img2_opt.jpg" alt="" srcset="">
                                             <div class="slide-descr">
                                                 <h4 class="slide-subtitle">
@@ -619,7 +1191,7 @@
                                         </a>
                                     </div>
                                     <div class="swiper-slide block5-slide">
-                                        <a href="#" class="block1-popup">
+                                        <a href="#block5-slide3" class="popup-link">
                                             <img src="./img/block5_img3_opt.jpg" alt="" srcset="">
                                             <div class="slide-descr">
                                                 <h4 class="slide-subtitle">
@@ -632,7 +1204,7 @@
                                         </a>
                                     </div>
                                     <div class="swiper-slide block5-slide">
-                                        <a href="#" class="block1-popup">
+                                        <a href="#block5-slide4" class="popup-link">
                                             <img src="./img/block5_img4_opt.jpg" alt="" srcset="">
                                             <div class="slide-descr">
                                                 <h4 class="slide-subtitle">
@@ -646,7 +1218,6 @@
                                         </a>
                                     </div>
                                 </div>
-
                                 <div class="swiper-button-prev block5-swiper-prev"></div>
                                 <div class="swiper-button-next block5-swiper-next"></div>
                             </div>
@@ -680,6 +1251,190 @@
                                     <p class="paragraph">
                                         Продолжительность 6&nbsp;часов.
                                     </p>
+                                </div>
+                            </div>
+                            <div class="popup" id="block5-slide1">
+                                <div class="popup-body">
+                                    <div class="popup-content block-background5_1 block-background">
+                                        <button type="button" class="popup-close btn-reset close">
+                                            <svg width="38" height="38" viewbox="0 0 38 38" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <rect x="-0.5" y="0.5" width="37" height="37" rx="18.5"
+                                                    transform="matrix(-1 0 0 1 37 0)" stroke="white" />
+                                                <line x1="9.64645" y1="27.6464" x2="26.6464" y2="10.6464"
+                                                    stroke="white" />
+                                                <line y1="-0.5" x2="24.0416" y2="-0.5"
+                                                    transform="matrix(-0.707107 -0.707107 -0.707107 0.707107 27 28)"
+                                                    stroke="white" />
+                                            </svg>
+                                        </button>
+                                        <div class="block-content">
+                                            <h5 class="popup-title  block-subtitle">
+                                                Остров Старичков
+                                            </h5>
+                                            <p class="popup-descr block-descr">
+                                                Остров Старичков&nbsp;&mdash; остров в&nbsp;южной части Авачинского
+                                                залива, на&nbsp;12&nbsp;километров удаленный от&nbsp;входа
+                                                в&nbsp;Авачинскую бухту в&nbsp;южном направлении. Старичков исполняет
+                                                важную навигационную функцию, указывая на&nbsp;близость Авачинской бухты
+                                                при заходе с&nbsp;юга. Своим названием остров обязан обитающей
+                                                на&nbsp;нем колонии птиц стариков. Так остров именуется еще
+                                                с&nbsp;начала XVIII&nbsp;века.
+                                                Площадь частично покрытого луговым разнотравьем острова Старичков
+                                                невелика&nbsp;&mdash; всего 0,5 км2. Его северо-западная часть
+                                                возвышается на&nbsp;147,5&nbsp;м над уровнем моря, а&nbsp;плоская
+                                                вершина, занятая зарослями ольхового стланика, опускается к&nbsp;самому
+                                                океану крутыми склонами и&nbsp;обрывами.
+                                                Старичков со&nbsp;всех сторон окружен множественными прибрежными рифами
+                                                и&nbsp;камнями, которые обнажаются во&nbsp;время отливов. У&nbsp;берегов
+                                                находятся цепи маленьких островов&nbsp;&mdash; кеккуры.
+                                                У&nbsp;Старичкова их&nbsp;два&nbsp;&mdash; Караульный и&nbsp;Часовой.
+                                            </p>
+                                        </div>
+                                        <button type="submit" class="popup-btn btn-reset close block-btn">
+                                            Вернуться к маршруту
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="popup" id="block5-slide2">
+                                <div class="popup-body">
+                                    <div class="popup-content block-background5_2 block-background">
+                                        <button type="button" class="popup-close btn-reset close">
+                                            <svg width="38" height="38" viewbox="0 0 38 38" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <rect x="-0.5" y="0.5" width="37" height="37" rx="18.5"
+                                                    transform="matrix(-1 0 0 1 37 0)" stroke="white" />
+                                                <line x1="9.64645" y1="27.6464" x2="26.6464" y2="10.6464"
+                                                    stroke="white" />
+                                                <line y1="-0.5" x2="24.0416" y2="-0.5"
+                                                    transform="matrix(-0.707107 -0.707107 -0.707107 0.707107 27 28)"
+                                                    stroke="white" />
+                                            </svg>
+                                        </button>
+                                        <div class="block-content">
+                                            <h5 class="popup-title  block-subtitle">
+                                                Скалы Три Брата
+                                            </h5>
+                                            <p class="popup-descr block-descr">
+                                                На&nbsp;самой границе Авачинской бухты, там, где она сливается
+                                                с&nbsp;Тихим океаном, возвышаются три скалы, получившие название
+                                                &laquo;Три брата&raquo;. Они стали символом этой бухты и&nbsp;одним
+                                                из&nbsp;любимых объектов фотографирования туристов. Это столбы-кекуры
+                                                базальтового происхождения. От&nbsp;берега их&nbsp;отделяет около
+                                                300&nbsp;метров, а&nbsp;если мерить расстояние
+                                                от&nbsp;Петропавловска-Камчатского, то&nbsp;будет 14&nbsp;км. Площадь
+                                                скал 0,2&nbsp;га, а&nbsp;охранная территория простирается
+                                                на&nbsp;78,3&nbsp;гектар. Подойти близко к&nbsp;этому памятнику природы
+                                                сложно&nbsp;&mdash; вокруг них сильные течения, поэтому катера
+                                                и&nbsp;лодки ощутимо раскачивает. Ученые исследовали эти скалы
+                                                и&nbsp;под водой, где обнаружили на&nbsp;глубине 13&nbsp;метров
+                                                небольшую пещеру.
+                                                Вокруг скал образовалась своя биосистема, под водой живут крабы, морские
+                                                ежи, губки, актинии. Поэтому рыбалка рядом со&nbsp;скалами&nbsp;&mdash;
+                                                популярное занятие у&nbsp;местных жителей и&nbsp;туристов.
+                                                В&nbsp;1983 году &laquo;Три брата&raquo; были официально объявлены
+                                                региональным памятником природы и&nbsp;вошли в&nbsp;перечень особо
+                                                охраняемых территорий Камчатки. Первые русские путешественники,
+                                                побывавшие в&nbsp;этих краях еще в&nbsp;1737&nbsp;году, занесли скалы
+                                                на&nbsp;карты. Эти впечатляющие вертикальные острова часто упоминались
+                                                в&nbsp;записях моряков. Например, Чарльз Кларк (участник экспедиции
+                                                Джеймса Кука) оставил восхищенную запись, удивляясь интересным видом
+                                                этих скал, назвав их&nbsp;примечательными по&nbsp;форме.
+                                            </p>
+                                        </div>
+                                        <button type="submit" class="popup-btn btn-reset close block-btn">
+                                            Вернуться к маршруту
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="popup" id="block5-slide3">
+                                <div class="popup-body">
+                                    <div class="popup-content block-background5_3 block-background">
+                                        <button type="button" class="popup-close btn-reset close">
+                                            <svg width="38" height="38" viewbox="0 0 38 38" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <rect x="-0.5" y="0.5" width="37" height="37" rx="18.5"
+                                                    transform="matrix(-1 0 0 1 37 0)" stroke="white" />
+                                                <line x1="9.64645" y1="27.6464" x2="26.6464" y2="10.6464"
+                                                    stroke="white" />
+                                                <line y1="-0.5" x2="24.0416" y2="-0.5"
+                                                    transform="matrix(-0.707107 -0.707107 -0.707107 0.707107 27 28)"
+                                                    stroke="white" />
+                                            </svg>
+                                        </button>
+                                        <div class="block-content">
+                                            <h5 class="popup-title  block-subtitle">
+                                                Остров Бабушкин Камень
+                                            </h5>
+                                            <p class="popup-descr block-descr">
+                                                Остров представляет собой кекур (столбовидную скалу естественного
+                                                происхождения) окруженный системой подводных гротов. Морская флора
+                                                и&nbsp;фауна этих мест чрезвычайно разнообразна и&nbsp;красочна, что
+                                                делает остров Бабушкин камень излюбленным местом посещения дайверов
+                                                и&nbsp;аквалангистов. В&nbsp;местных водах встречаются пышные актинии,
+                                                несколько видов морских звезд и&nbsp;ежей, морские огурцы, губки,
+                                                колониальные гидроиды, многочисленные виды рыб.
+                                                Поверхность острова&nbsp;&mdash; это ровная площадка, наклоненная
+                                                к&nbsp;проливу и&nbsp;заросшая травой, кустарниками.
+                                                Под водой скала-остров окружена системой подводных гротов. Морские
+                                                подводные обитатели&nbsp;о. Бабушкин Камень разнообразны
+                                                и&nbsp;красочны: дайверы оценят пышные актинии, морских ежей, звезд,
+                                                огурцов, губок, а&nbsp;также многочисленные виды рыб и&nbsp;колониальные
+                                                гидроиды.
+                                            </p>
+                                        </div>
+                                        <button type="submit" class="popup-btn btn-reset close block-btn">
+                                            Вернуться к маршруту
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="popup" id="block5-slide4">
+                                <div class="popup-body">
+                                    <div class="popup-content block-background5_4 block-background">
+                                        <button type="button" class="popup-close btn-reset close">
+                                            <svg width="38" height="38" viewbox="0 0 38 38" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <rect x="-0.5" y="0.5" width="37" height="37" rx="18.5"
+                                                    transform="matrix(-1 0 0 1 37 0)" stroke="white" />
+                                                <line x1="9.64645" y1="27.6464" x2="26.6464" y2="10.6464"
+                                                    stroke="white" />
+                                                <line y1="-0.5" x2="24.0416" y2="-0.5"
+                                                    transform="matrix(-0.707107 -0.707107 -0.707107 0.707107 27 28)"
+                                                    stroke="white" />
+                                            </svg>
+                                        </button>
+                                        <div class="block-content">
+                                            <h5 class="popup-title  block-subtitle">
+                                                Мыс Станицкого
+                                            </h5>
+                                            <p class="popup-descr block-descr">
+                                                Первоначально мыс был назван &laquo;Каюмы&raquo;. Возможно его якутское
+                                                происхождение, что в&nbsp;переводе означает &laquo;скалы&raquo;,
+                                                &laquo;высокий скалистый обрыв&raquo;. Это название мыса использовалось
+                                                до&nbsp;конца XIX&nbsp;века.
+                                                Нынешнее название мыс носит в&nbsp;память о&nbsp;начальнике Камчатки
+                                                в&nbsp;1822&nbsp;&mdash; 1828 годах капитане 1&nbsp;ранга Фёдоре
+                                                Ефимовиче Станицком (1773&nbsp;&mdash; 1828). Предположительно, так
+                                                назвать мыс предложил капитан английского судна &quot; Блоссун&quot;
+                                                Фредерик Уильям Бичи, который заходил в&nbsp;Петропавловский порт
+                                                в&nbsp;1826 и&nbsp;1827&nbsp;годах.
+                                                На&nbsp;западной стороне пролива, соединяющего Авачинский залив
+                                                и&nbsp;Авачинскую губу установлен маяк 3&nbsp;класса. Вместе
+                                                с&nbsp;находящимся на&nbsp;восточной стороне этого пролива маяком
+                                                Петропавловским он&nbsp;обеспечивает плавание судов по&nbsp;створу
+                                                Авачинских маяков из&nbsp;океана в&nbsp;Авачинскую губу и&nbsp;обратно
+                                                в&nbsp;океан. Впервые навигационный огонь&nbsp;&mdash; светящий
+                                                навигационный знак на&nbsp;мысе Станицкого был установлен
+                                                в&nbsp;1936&nbsp;году.
+                                            </p>
+                                        </div>
+                                        <button type="submit" class="popup-btn btn-reset close block-btn">
+                                            Вернуться к маршруту
+                                        </button>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -730,7 +1485,7 @@
                             <div class="swiper block6-swiper">
                                 <div class="swiper-wrapper">
                                     <div class="swiper-slide block6-slide">
-                                        <a href="#" class="block1-popup">
+                                        <a href="#block6-slide1" class="popup-link">
                                             <img src="./img/block6_img1_opt.jpg" alt="" srcset="">
                                             <div class="slide-descr">
                                                 <h4 class="slide-subtitle">
@@ -743,7 +1498,7 @@
                                         </a>
                                     </div>
                                     <div class="swiper-slide block6-slide">
-                                        <a href="#" class="block1-popup">
+                                        <a href="#block6-slide2" class="popup-link">
                                             <img src="./img/block6_img2_opt.jpg" alt="" srcset="">
                                             <div class="slide-descr">
                                                 <h4 class="slide-subtitle">
@@ -756,7 +1511,7 @@
                                         </a>
                                     </div>
                                     <div class="swiper-slide block6-slide">
-                                        <a href="#" class="block1-popup">
+                                        <a href="#block6-slide3" class="popup-link">
                                             <img src="./img/block6_img3_opt.jpg" alt="" srcset="">
                                             <div class="slide-descr">
                                                 <h4 class="slide-subtitle">
@@ -769,9 +1524,130 @@
                                         </a>
                                     </div>
                                 </div>
-
                                 <div class="swiper-button-prev block6-swiper-prev"></div>
                                 <div class="swiper-button-next block6-swiper-next"></div>
+                            </div>
+                            <div class="popup" id="block6-slide1">
+                                <div class="popup-body">
+                                    <div class="popup-content block-background6_1 block-background">
+                                        <button type="button" class="popup-close btn-reset close">
+                                            <svg width="38" height="38" viewbox="0 0 38 38" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <rect x="-0.5" y="0.5" width="37" height="37" rx="18.5"
+                                                    transform="matrix(-1 0 0 1 37 0)" stroke="white" />
+                                                <line x1="9.64645" y1="27.6464" x2="26.6464" y2="10.6464"
+                                                    stroke="white" />
+                                                <line y1="-0.5" x2="24.0416" y2="-0.5"
+                                                    transform="matrix(-0.707107 -0.707107 -0.707107 0.707107 27 28)"
+                                                    stroke="white" />
+                                            </svg>
+                                        </button>
+                                        <div class="block-content">
+                                            <h5 class="popup-title  block-subtitle">
+                                                Волновой sup серфинг
+                                            </h5>
+                                            <p class="popup-descr block-descr">
+                                                SUP сёрфинг&nbsp;&mdash; это гребля на&nbsp;доске стоя, вид спорта
+                                                выросший из&nbsp;серфинга. Доски для этого вида серфинга намного
+                                                длиннее, шире и&nbsp;плавучей, чем привычные доски для серфинга.
+                                                Соотношение этих параметров позволяет с&nbsp;относительным комфортом
+                                                балансировать на&nbsp;таком серфборде, пользуясь веслом, грести
+                                                и&nbsp;ловить волны,&nbsp;&mdash; все это на&nbsp;прямых ногах. Можете
+                                                представить, какая это нагрузка!
+                                                SUP хорош тем, что, будь&nbsp;то 6-ти метровый гавайский серф-спот
+                                                Челюсти (Jaws) или гладь Ладожского озера, на&nbsp;этой доске вам будет
+                                                весело на&nbsp;волнах и&nbsp;без. Прекрасная тренировка на&nbsp;баланс
+                                                и&nbsp;силу и&nbsp;хорошая фора в&nbsp;гребле на&nbsp;волнах. Против
+                                                весла не&nbsp;поспоришь!
+                                            </p>
+                                        </div>
+                                        <button type="submit" class="popup-btn btn-reset close block-btn">
+                                            Вернуться к маршруту
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="popup" id="block6-slide2">
+                                <div class="popup-body">
+                                    <div class="popup-content block-background6_2 block-background">
+                                        <button type="button" class="popup-close btn-reset close">
+                                            <svg width="38" height="38" viewbox="0 0 38 38" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <rect x="-0.5" y="0.5" width="37" height="37" rx="18.5"
+                                                    transform="matrix(-1 0 0 1 37 0)" stroke="white" />
+                                                <line x1="9.64645" y1="27.6464" x2="26.6464" y2="10.6464"
+                                                    stroke="white" />
+                                                <line y1="-0.5" x2="24.0416" y2="-0.5"
+                                                    transform="matrix(-0.707107 -0.707107 -0.707107 0.707107 27 28)"
+                                                    stroke="white" />
+                                            </svg>
+                                        </button>
+                                        <div class="block-content">
+                                            <h5 class="popup-title  block-subtitle">
+                                                Халактырский пляж
+                                            </h5>
+                                            <p class="popup-descr block-descr">
+                                                Халактырский пляж находится на&nbsp;восточном побережье Камчатки совсем
+                                                не&nbsp;далеко от&nbsp;города Петропавловска-Камчатского. Отличительной
+                                                чертой этого пляжа является черный вулканический песок.
+                                                Это редкое явление, причиной которого служат постоянные извержения
+                                                вулканов на&nbsp;полуострове. Потоки лавы и&nbsp;шлаков изливаются
+                                                и&nbsp;застывают на&nbsp;склонах и&nbsp;соседних территориях.
+                                                А&nbsp;быстрые реки, что берут свое начало в&nbsp;ледниках, год
+                                                за&nbsp;годом размывают эту богатую минералами породу и&nbsp;несут
+                                                в&nbsp;океан. А&nbsp;дальше, с&nbsp;каждой наступающей на&nbsp;берег
+                                                волной, выносятся и&nbsp;остаются на&nbsp;прибрежной полосе мелкие
+                                                частицы, вулканического происхождения. К&nbsp;настоящему моменту толща
+                                                черного песка достигает 20&nbsp;метров, а&nbsp;само побережье
+                                                Халактырского пляжа растянулось более чем на&nbsp;30&nbsp;километров.
+                                            </p>
+                                        </div>
+                                        <button type="submit" class="popup-btn btn-reset close block-btn">
+                                            Вернуться к маршруту
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="popup" id="block6-slide3">
+                                <div class="popup-body">
+                                    <div class="popup-content block-background6_3 block-background">
+                                        <button type="button" class="popup-close btn-reset close">
+                                            <svg width="38" height="38" viewbox="0 0 38 38" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <rect x="-0.5" y="0.5" width="37" height="37" rx="18.5"
+                                                    transform="matrix(-1 0 0 1 37 0)" stroke="white" />
+                                                <line x1="9.64645" y1="27.6464" x2="26.6464" y2="10.6464"
+                                                    stroke="white" />
+                                                <line y1="-0.5" x2="24.0416" y2="-0.5"
+                                                    transform="matrix(-0.707107 -0.707107 -0.707107 0.707107 27 28)"
+                                                    stroke="white" />
+                                            </svg>
+                                        </button>
+                                        <div class="block-content">
+                                            <h5 class="popup-title  block-subtitle">
+                                                Тихий океан на Камчатке — сундук сокровищ
+                                            </h5>
+                                            <p class="popup-descr block-descr">
+                                                Из&nbsp;множества берегов суши, которые омывают его воды, выделяются
+                                                и&nbsp;берега Тихого океана у&nbsp;Камчатского полуострова. В&nbsp;его
+                                                воды входит Берингово и&nbsp;Охотское море, расположенные с&nbsp;востока
+                                                и&nbsp;запада полуострова соответственно.
+                                                Воды непосредственно Тихого океана на&nbsp;Камчатке покоятся в&nbsp;трех
+                                                крупных заливах: Камчатский, Кроноцкий и&nbsp;Авачинский. Последний
+                                                в&nbsp;свою очередь является главным торговым портом всего Камчатского
+                                                края. Здесь располагается его столица Петропавловск-Камчатский.
+                                                Излюбленным местом для туристов, которые хотят посмотреть на&nbsp;Тихий
+                                                океан является Халактырский пляж. Особенностью пляжа является черный
+                                                цвет песка, получившийся в&nbsp;результате осадка вулканической породы
+                                                после извержений. Здесь открываются потрясающие панорамы как на&nbsp;сам
+                                                океан, так и&nbsp;на&nbsp;город.
+                                            </p>
+                                        </div>
+                                        <button type="submit" class="popup-btn btn-reset close block-btn">
+                                            Вернуться к маршруту
+                                        </button>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -817,7 +1693,7 @@
                         <div class="swiper block7-swiper">
                             <div class="swiper-wrapper">
                                 <div class="swiper-slide block7-slide">
-                                    <a href="#" class="block1-popup">
+                                    <a href="#block7-slide1" class="popup-link">
                                         <img src="./img/block7_img1_opt.jpg" alt="" srcset="">
                                         <div class="slide-descr">
                                             <h4 class="slide-subtitle">
@@ -831,7 +1707,7 @@
                                     </a>
                                 </div>
                                 <div class="swiper-slide block7-slide">
-                                    <a href="#" class="block1-popup">
+                                    <a href="#block7-slide2" class="popup-link">
                                         <img src="./img/block7_img2_opt.jpg" alt="" srcset="">
                                         <div class="slide-descr">
                                             <h4 class="slide-subtitle">
@@ -844,14 +1720,15 @@
                                     </a>
                                 </div>
                                 <div class="swiper-slide block7-slide">
-                                    <a href="#" class="block1-popup">
+                                    <a href="#block7-slide3" class="popup-link">
                                         <img src="./img/block7_img3_opt.jpg" alt="" srcset="">
                                         <div class="slide-descr">
                                             <h4 class="slide-subtitle">
                                                 Налычевская долина
                                             </h4>
                                             <p class="slide-text">
-                                                Долина, окруженной со всех сторон горными хребтами и величественными вулканами.
+                                                Долина, окруженной со всех сторон горными хребтами и величественными
+                                                вулканами.
                                             </p>
                                         </div>
                                     </a>
@@ -893,12 +1770,135 @@
                                 </div>
                             </div>
                         </div>
+                        <div class="popup" id="block7-slide1">
+                            <div class="popup-body">
+                                <div class="popup-content block-background7_1 block-background">
+                                    <button type="button" class="popup-close btn-reset close">
+                                        <svg width="38" height="38" viewbox="0 0 38 38" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <rect x="-0.5" y="0.5" width="37" height="37" rx="18.5"
+                                                transform="matrix(-1 0 0 1 37 0)" stroke="white" />
+                                            <line x1="9.64645" y1="27.6464" x2="26.6464" y2="10.6464" stroke="white" />
+                                            <line y1="-0.5" x2="24.0416" y2="-0.5"
+                                                transform="matrix(-0.707107 -0.707107 -0.707107 0.707107 27 28)"
+                                                stroke="white" />
+                                        </svg>
+                                    </button>
+                                    <div class="block-content">
+                                        <h5 class="popup-title  block-subtitle">
+                                            Долина гейзеров
+                                        </h5>
+                                        <p class="popup-descr block-descr">
+                                            Долина гейзеров&nbsp;&mdash; природная достопримечательность Камчатского
+                                            края, расположенная в&nbsp;Кроноцком биосферном заповеднике. Уникальные
+                                            термальные источники, грязевые котлы, водопады и&nbsp;озера разбросаны
+                                            по&nbsp;каньону реки Гейзерной. На&nbsp;небольшой территории наблюдаются
+                                            разнообразные природные условия и&nbsp;микроклиматические особенности,
+                                            вмещающие в&nbsp;себя ландшафты нескольких географических поясов. Основа
+                                            драматичных панорам заповедника&nbsp;&mdash; пышущие гейзеры, бурлящие
+                                            и&nbsp;взрывающиеся сокрушительными потоками воды и&nbsp;пара.
+                                        </p>
+                                    </div>
+                                    <button type="submit" class="popup-btn btn-reset close block-btn">
+                                        Вернуться к маршруту
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="popup" id="block7-slide2">
+                            <div class="popup-body">
+                                <div class="popup-content block-background7_2 block-background">
+                                    <button type="button" class="popup-close btn-reset close">
+                                        <svg width="38" height="38" viewbox="0 0 38 38" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <rect x="-0.5" y="0.5" width="37" height="37" rx="18.5"
+                                                transform="matrix(-1 0 0 1 37 0)" stroke="white" />
+                                            <line x1="9.64645" y1="27.6464" x2="26.6464" y2="10.6464" stroke="white" />
+                                            <line y1="-0.5" x2="24.0416" y2="-0.5"
+                                                transform="matrix(-0.707107 -0.707107 -0.707107 0.707107 27 28)"
+                                                stroke="white" />
+                                        </svg>
+                                    </button>
+                                    <div class="block-content">
+                                        <h5 class="popup-title  block-subtitle">
+                                            Кальдера вулкана Узон
+                                        </h5>
+                                        <p class="popup-descr block-descr">
+                                            Кальдера вулкана Узон&nbsp;&mdash; жемчужина Кроноцкого заповедника
+                                            на&nbsp;Камчатском полуострове. Она приурочена к&nbsp;центральной части
+                                            Восточного вулканического пояса Камчатки&nbsp;&mdash; Узон-Гейзерной
+                                            вулкано-тектонической депрессии.
+                                            Это ни&nbsp;на&nbsp;что не&nbsp;похожий район проявления современного
+                                            вулканизма, минерало- и&nbsp;рудообразования, который в&nbsp;1996 году был
+                                            включен в&nbsp;Список Всемирного природного наследия ЮНЕСКО в&nbsp;номинации
+                                            &laquo;Вулканы Камчатки&raquo;. На&nbsp;Узоне Вы&nbsp;встретите самобытный
+                                            и&nbsp;завораживающий симбиоз вулканизма и&nbsp;дикой природы.
+                                            В&nbsp;кальдере располагаются сотни озер, поверхность которых постоянно
+                                            бурлит, пузырится и&nbsp;пенится. Причиной тому служит активность подводных
+                                            фумарол. А&nbsp;вот озеро Банное еще опаснее: под его ложным дном (корка
+                                            застывшей серы) находятся выходы радона и&nbsp;резервуар расплавленной серы,
+                                            поэтому вода в&nbsp;нем прогревается до&nbsp;+40&deg;С даже в&nbsp;зимний
+                                            период.
+                                            На&nbsp;востоке кальдеры расположено ее&nbsp;самое молодое вулканическое
+                                            образование&nbsp;&mdash; озеро Дальнее, занимающее полуторакилометровую
+                                            воронку взрыва. Ее&nbsp;возраст около 7600&nbsp;лет. Самое большое
+                                            из&nbsp;озер в&nbsp;заболоченной западной части кальдеры&nbsp;&mdash;
+                                            Центральное. Столбы пара поднимаются над желтыми фумарольными полями.
+                                            Множество ручьев (Дальний, Веселый, Западный и&nbsp;др.) и&nbsp;речек,
+                                            протекающих по&nbsp;дну кальдеры, дают начало реке Шумная.
+                                        </p>
+                                    </div>
+                                    <button type="submit" class="popup-btn btn-reset close block-btn">
+                                        Вернуться к маршруту
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="popup" id="block7-slide3">
+                            <div class="popup-body">
+                                <div class="popup-content block-background7_3 block-background">
+                                    <button type="button" class="popup-close btn-reset close">
+                                        <svg width="38" height="38" viewbox="0 0 38 38" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <rect x="-0.5" y="0.5" width="37" height="37" rx="18.5"
+                                                transform="matrix(-1 0 0 1 37 0)" stroke="white" />
+                                            <line x1="9.64645" y1="27.6464" x2="26.6464" y2="10.6464" stroke="white" />
+                                            <line y1="-0.5" x2="24.0416" y2="-0.5"
+                                                transform="matrix(-0.707107 -0.707107 -0.707107 0.707107 27 28)"
+                                                stroke="white" />
+                                        </svg>
+                                    </button>
+                                    <div class="block-content">
+                                        <h5 class="popup-title  block-subtitle">
+                                            Налычевская долина
+                                        </h5>
+                                        <p class="popup-descr block-descr">
+                                            Налычевская долина&nbsp;&mdash; одно из&nbsp;красивейших мест
+                                            Камчатки.&nbsp;18&nbsp;августа 1995 года здесь был создан природный парк
+                                            &laquo;Налычево&raquo;, а&nbsp;6&nbsp;декабря 1996 года она была включена
+                                            в&nbsp;Список Всемирного Наследия ЮНЕСКО. Несколько лет назад, во&nbsp;время
+                                            своей поездки на&nbsp;Камчатку, я, естественно, посетила этот удивительный
+                                            уголок Камчатской земли.
+                                            Налычевская долина знаменита своими термальными и&nbsp;холодными
+                                            источниками. Они были известны еще издревле. Согласно ительменской легенде,
+                                            тот человек, кто утром с&nbsp;первыми лучами солнца окунется
+                                            в&nbsp;источнике, обретет красоту, здоровье и&nbsp;вечную молодость.
+                                            Как&nbsp;бы то&nbsp;ни&nbsp;было, но&nbsp;вода в&nbsp;этих источниках
+                                            целебная и&nbsp;не&nbsp;имеет аналогов.
+                                        </p>
+                                    </div>
+                                    <button type="submit" class="popup-btn btn-reset close block-btn">
+                                        Вернуться к маршруту
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <!-- </div> -->
                 <div class="block8-container">
                     <div class="container">
-                        <div class="block8-content">
+                        <div class="block8-content flex">
                             <h3 class="schedule-title">
                                 <span class="schedule-info">
                                     День&nbsp;8.
@@ -917,14 +1917,14 @@
             </section>
             <section class="price">
                 <div class="container">
-                    <div class="price-content">
-                        <h2 class="price-title title">
+                    <div class="price-content" id="entry">
+                        <h2 class="price-title title" id="price">
                             Стоимость участия
                         </h2>
                         <div class="price-block flex">
                             <div class="price-left">
                                 <ul class="left-list list-reset">
-                                    <li class="left-item">
+                                    <li class="left-item flex">
                                         <span class="price-info">
                                             Базовый (для камчадал)
                                         </span>
@@ -932,7 +1932,7 @@
                                             79 000 руб
                                         </span>
                                     </li>
-                                    <li class="left-item">
+                                    <li class="left-item flex">
                                         <span class="price-info">
                                             Базовый + проживание
                                         </span>
@@ -940,7 +1940,7 @@
                                             99 000 руб
                                         </span>
                                     </li>
-                                    <li class="left-item">
+                                    <li class="left-item flex">
                                         <span class="price-info">
                                             Базовый + проживание + долина гейзеров
                                         </span>
@@ -953,25 +1953,25 @@
                             <div class="price-right">
                                 <ul class="right-list list-reset">
                                     <li class="right-item">
-                                        <a href="#" class="right-link">
+                                        <a href="#" class="right-link" target="_blank">
                                             Информация о&nbsp;бронях
                                         </a>
                                     </li>
                                     <li class="right-item">
-                                        <a href="#" class="right-link">
+                                        <a href="#" class="right-link" target="_blank">
                                             Важная информация
                                         </a>
                                     </li>
                                     <li class="right-item">
-                                        <a href="#" class="right-link">
+                                        <a href="#" class="right-link" target="_blank">
                                             Условия договора и&nbsp;возврата
                                         </a>
                                     </li>
                                 </ul>
-                                <button type="button" class="price-btn btn-reset flex">
+                                <button type="button" class="price-btn btn-reset flex popup-link" href="#online">
                                     <span class="btn-text">
                                         Отправить заявку
-                                    </span>  
+                                    </span>
                                     <svg width="38" height="39" viewbox="0 0 38 39" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
                                         <rect x="-0.5" y="0.5" width="37" height="37" rx="18.5"
@@ -1067,7 +2067,7 @@
                         <div class="request-content">
                             <div class="request-top flex">
                                 <div class="request-left">
-                                    <h2 class="request-title top-title">
+                                    <h2 class="request-title top-title" id="request">
                                         Онлайн-заявка
                                     </h2>
                                     <ul class="social flex list-reset">
@@ -1130,11 +2130,12 @@
                                         <div class="form-top">
                                             <div class="name">
                                                 <label for="name">Имя уастника</label>
-                                                <input type="text" id="name" placeholder="Имя" name="name">
+                                                <input type="text" id="name" placeholder="Имя" name="name" required>
                                             </div>
                                             <div class="amount">
                                                 <label for="amount">Количество человек</label>
-                                                <input type="number" id="amount" min="1" name="amount" placeholder="1">
+                                                <input type="number" id="amount" min="1" name="amount" placeholder="1"
+                                                    required>
                                             </div>
                                         </div>
                                         <div class="rate">
@@ -1142,31 +2143,31 @@
                                                 Тариф
                                             </h3>
                                             <ul class="rate-list list-reset">
-                                                <li class="rate-item">
+                                                <li class="rate-item flex">
                                                     <div class="rate-input">
                                                         <input type="radio" name="tour" id="radio1" value="base"
                                                             checked>
-                                                        <label for="base">Базовый (для камчадал)</label>
+                                                        <label for="radio1">Базовый (для камчадал)</label>
                                                     </div>
                                                     <span class="price-price">
                                                         79 000 руб
                                                     </span>
                                                 </li>
-                                                <li class="rate-item">
+                                                <li class="rate-item flex">
                                                     <div class="rate-input">
                                                         <input type="radio" name="tour" id="radio2"
                                                             value="basicAccommodation">
-                                                        <label for="basicAccommodation">Базовый + проживание</label>
+                                                        <label for="radio2">Базовый + проживание</label>
                                                     </div>
                                                     <span class="price-price">
                                                         99 000 руб
                                                     </span>
                                                 </li>
-                                                <li class="rate-item">
+                                                <li class="rate-item flex">
                                                     <div class="rate-input">
                                                         <input type="radio" name="tour" id="radio3"
                                                             value="BasicAccommodationValleyOfGeysers">
-                                                        <label for="BasicAccommodationValleyOfGeysers">Базовый +
+                                                        <label for="radio3">Базовый +
                                                             проживание + долина
                                                             гейзеров</label>
                                                     </div>
@@ -1178,11 +2179,11 @@
                                         </div>
                                         <div class="date">
                                             <label for="date">Даты тура</label>
-                                            <input type="date" name="date" id="date">
+                                            <input type="date" name="date" id="popup-date" required>
                                         </div>
                                         <div class="comment">
                                             <label for="comment">Комментарий</label>
-                                            <textarea name="comment" id="comment" cols="30" rows="10"
+                                            <textarea name="comment" id="popup-comment" cols="30" rows="10"
                                                 placeholder="Напишите ваш комментарий"></textarea>
                                         </div>
                                         <button type="submit" class="form-btn btn-reset">
@@ -1212,7 +2213,7 @@
             </section>
             <section class="about">
                 <div class="container">
-                    <div class="about-content">
+                    <div class="about-content" id="team">
                         <h2 class="about-title title">
                             Про нашу супер крутую команду Dreamkam Tour
                         </h2>
@@ -1285,15 +2286,14 @@
                                     <a href="" class="column-link">
                                         @dreamkamtour
                                     </a>
-                                    <button class="footer-btn btn-reset">
+                                    <a class="footer-btn" target="_blank" href="https://www.instagram.com/">
                                         Подписаться
-                                    </button>
+                                    </a>
                                 </div>
                                 <div class="footer-foto">
                                     <div class="img-block">
                                         <img src="img/footer_foto1.jpg" alt="">
                                         <img src="img/footer_foto2.jpg" alt="">
-
                                     </div>
                                     <img src="img/footer_foto3.jpg" alt="">
                                     <img src="img/footer_foto4.jpg" alt="">
@@ -1399,6 +2399,25 @@
             </div>
         </footer>
     </div>
+    <button class="btn-up btn-reset">
+        <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+            x="0px" y="0px" width="314.069px" height="314.069px" viewbox="0 0 314.069 314.069"
+            style="enable-background:new 0 0 314.069 314.069;" xml:space="preserve">
+            <g>
+                <g id="_x34_99._Up">
+                    <g>
+                        <path d="M293.003,78.531C249.646,3.436,153.619-22.295,78.529,21.061C3.434,64.411-22.297,160.443,21.067,235.542
+				c43.35,75.087,139.375,100.822,214.465,57.467C310.628,249.648,336.371,153.621,293.003,78.531z M219.835,265.802
+				c-60.067,34.685-136.894,14.114-171.576-45.961C13.577,159.762,34.161,82.943,94.23,48.261
+				c60.071-34.69,136.894-14.106,171.578,45.971C300.493,154.308,279.906,231.118,219.835,265.802z M168.132,121.034
+				c-3.066-3.07-7.077-4.599-11.097-4.599c-4.018,0-8.031,1.529-11.101,4.599l-44.409,44.406c-6.133,6.128-6.133,16.078,0,22.206
+				v-0.009c6.129,6.132,16.076,6.132,22.201,0l33.308-33.299l33.298,33.299c6.135,6.132,16.077,6.132,22.201,0v0.009
+				c6.135-6.128,6.135-16.078,0-22.206L168.132,121.034z" />
+                    </g>
+                </g>
+            </g>
+        </svg>
+    </button>
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script src="swiper.js"></script>
     <script src="main.js"></script>
